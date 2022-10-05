@@ -20,7 +20,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: rgb(255, 255, 255); /* This affects the menu titles such as 'Home' and 'About' */
+    background: rgb(255, 255, 255); /* This is the background of the website */
   }
 }
