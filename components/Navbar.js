@@ -51,7 +51,7 @@ const Navbar = () => {
     (
         <div>
             <nav className={styles.navbar}>
-                <h1 className={ styles.navbarTitle }>Software for Social Good</h1>
+                <h1 className={ styles.navbarTitle }>SSG</h1>
                 <div className={ styles.navbarNavigation }>
                     <a className={ styles.navbarNavigationItems } href="/">DESKTOP Home</a>
                     <a className={ styles.navbarNavigationItems } href="/about">About</a>
