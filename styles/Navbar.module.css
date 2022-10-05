@@ -19,3 +19,10 @@
     margin-left: 3vw;
     color: #ffffff;
 }
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    background-color: #ff0000;
+}

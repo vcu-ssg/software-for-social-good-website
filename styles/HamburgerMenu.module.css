@@ -1,0 +1,14 @@
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.burger {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
