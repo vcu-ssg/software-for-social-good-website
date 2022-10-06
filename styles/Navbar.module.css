@@ -3,6 +3,9 @@
     align-items: center;
     background: #212121;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .navbarNavigation {
@@ -11,7 +14,7 @@
     margin-right: 20vw;
 }
 
-.navbarNavigationItems {
+.navbarNavigationItemsInactive {
     margin: 1.5vw; /* 1.5vw */
     color: #fbfbfb;
     font-style: normal;
@@ -19,8 +22,6 @@
     font-size: 16px;
     line-height: 20px;
     font-family: 'Be Vietnam Pro';
-    
-    
 }
 
 .navbarTitle {
@@ -31,5 +32,16 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 61px;
+}
 
+.navbarNavigationItemsActive {
+    margin: 1.5vw; /* 1.5vw */
+    color: #fbfbfb;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Be Vietnam Pro';
+    padding-bottom: 4px;
+    border-bottom: 2px solid #fbfbfb;
 }
