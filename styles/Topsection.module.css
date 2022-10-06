@@ -1,9 +1,63 @@
 
 .main {
+    position: absolute;
+    width: 538px;
+    height: 189px;
+    left: 319px;
+    top: 352px;
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 100.5%;
     color: #212121;
+}
+
+.sub {
+    position: absolute;
+    width: 538px;
+    height: 89px;
+    left: 319px;
+    top: 521px;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #212121;
+
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    position: absolute;
+    width: 170px;
+    height: 34px;
+    left: 319px;
+    top: 700px;
+    background: #212121;
+    border-radius: 18px;
+
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.emptyBoxOne {
+    position: absolute;
+    width: 330px;
+    height: 286px;
+    left: 969px;
+    top: 362px;
+    border: 2px solid black;
 }

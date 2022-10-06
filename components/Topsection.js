@@ -4,8 +4,13 @@ const Topsection = () =>
 {
     return(
         <div>
-            <div className={styles.mainBox}>
-                <h1 className={ styles.main }>Software for Social Good</h1>
+            <div>
+                <h1 className={ styles.main }>Software for Social \nGood</h1>
+                <h5 className={ styles.sub }>We connect the students with outer communities through projects that bring social impact.</h5>
+                <button className={ styles.button }> Learn more about us </button>
+                <div className={ styles.emptyBoxOne}>
+
+                </div>
             </div>
         </div>
     )

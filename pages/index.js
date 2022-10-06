@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Topsection from '../components/Topsection'
+import Pillars from '../components/Pillars'
+import Pastprojects from '../components/Pastprojects'
 import styles from '../styles/Home.module.css'
 
 export default function Home()
@@ -10,6 +12,8 @@ export default function Home()
     <div>
       <Navbar/>
       <Topsection/>
+      <Pillars/>
+      <Pastprojects/>
     </div>
     
   )
