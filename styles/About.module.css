@@ -45,7 +45,6 @@
     font-size: 48px;
     color: black;
     margin-bottom: 0em;
-    margin-left: 0em;
 }
 
 .teamSectionSubTitle {
@@ -67,7 +66,7 @@
 .teamSectionSkillsContainer {
     flex: 0.6; /* The border-bottom line is adjusted by this. */
     margin-top: 1em;
-    margin-left: 8em;
+    margin-left: 6em;
 }
 
 .teamSectionSkillsText {
@@ -85,13 +84,21 @@
 }
 
 .teamSectionMemberHeader {
-    padding-top: 7em;
+    padding-top: 5em;
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     text-align: center;
     color: #212121;
+}
+
+.teamSectionMemberContainer {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .buttonContainerActive {
@@ -134,6 +141,54 @@
     color: #fbfbfb; 
 }
 
-.buttonContainer:active {
-    box-shadow: 2px 2px 5px #fc894d;
+.operationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.operationOuterBox {
+    width: 16%;
+}
+
+.operationBox {
+    display: flex;
+    flex-direction: row;
+    width: 15em;
+    height: 50%;
+}
+
+.operationTitle {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #212121;
+    width: 40em;
+    align-self: center;
+    padding-left: 0.5em;
+}
+
+.operationOrderNumber {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    color: #212121;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    border-right: 2px solid #212121;
+}
+
+.operationDesc {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #212121;
 }

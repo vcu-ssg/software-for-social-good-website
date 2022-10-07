@@ -2,10 +2,63 @@ import { useState } from "react";
 
 import Navbar from "../components/Navbar";
 import styles from "../styles/About.module.css"
+import CardMembers from "../components/CardMembers";
+
+const developersTeam = [
+    {
+        name: "Kevin Ly",
+        major: "Computer Science",
+        graduationyear: "Class of 2023"
+    },
+    {
+        name: "Daniel Tran",
+        major: "Computer Science",
+        graduationyear: "Class of 2024"
+    },
+    {
+        name: "Lenice Jackson",
+        major: "Computer Science",
+        graduationyear: "Class of 2022"
+    },
+    {
+        name: "Sweta",
+        major: "Computer Science",
+        graduationyear: "Class of 2024"
+    },
+    {
+        name: "Aneesh Sai",
+        major: "Computer Science",
+        graduationyear: "Class of 2024"
+    }
+];
+
+const operationsList = [
+    {
+        orderNumber: 1,
+        operationTitle: "Faculty\nguidance",
+        operationDesc: "The developers have access to faculty mentorship from VCU college of engineering. This helps them to work in efficient and smart manner."
+    },
+    {
+        orderNumber: 2,
+        operationTitle: "Insights from\npartnered org",
+        operationDesc: "Developers gain insights from the partnered organizations to see how they solved the same problem."
+    },
+    {
+        orderNumber: 3,
+        operationTitle: "Communication\nwith designers",
+        operationDesc: "By communicating with the designers, developers share what the technical constraints are, and ensure the development is on the right path."
+    },
+    {
+        orderNumber: 4,
+        operationTitle: "Technical\nresearch",
+        operationDesc: "The developers also conduct reserach on APIs, open sources, and databases to be used in the softwares."
+    }
+]
 
 export default function about()
 {
     const [team, setTeam] = useState("Develop");
+
 
     return(
         <div>
@@ -28,7 +81,7 @@ export default function about()
                 <div className={ styles.teamSectionHeader }>
                     <div className={ styles.teamSectionTitleContainer }>
                         <div>
-                            <p className={ styles.teamSectionTitle }>Develop</p>
+                            <h3 className={ styles.teamSectionTitle }>Develop</h3>
                         </div>
                         <p className={ styles.teamSectionSubTitle }>The developers ensures our products<br />come to life.</p>
                     </div>
@@ -41,7 +94,30 @@ export default function about()
                     </div>
                 </div>
                 <div>
-                    <p className={ styles.teamSectionMemberHeader }>Our Developers</p>
+                    <h4 className={ styles.teamSectionMemberHeader }>Our Developers</h4>
+                    <div className={ styles.teamSectionMemberContainer }>
+                        {developersTeam.map((member) => {
+                            return(
+                                <CardMembers name={ member.name } major={ member.major } graduationyear={ member.graduationyear }/>
+                            )
+                        })}
+                    </div>
+                </div>
+                <div>
+                    <h5 className={ styles.teamSectionMemberHeader }>How We Operate</h5>
+                    <div className={ styles.operationContainer }>
+                        {operationsList.map((operation) => {
+                            return(
+                                <div className={ styles.operationOuterBox }>
+                                    <div className={ styles.operationBox }>    
+                                        <p className={ styles.operationOrderNumber }> {operation.orderNumber} </p>
+                                        <h6 className={ styles.operationTitle }> { operation.operationTitle } </h6>
+                                    </div>
+                                    <p className={ styles.operationDesc }> { operation.operationDesc } </p>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
