@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Topsection from '../components/Topsection'
 import Pillars from '../components/Pillars'
 import Pastprojects from '../components/Pastprojects'
+import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 
 export default function Home()
@@ -14,6 +15,7 @@ export default function Home()
       <Topsection/>
       <Pillars/>
       <Pastprojects/>
+      <Footer/>
     </div>
     
   )
