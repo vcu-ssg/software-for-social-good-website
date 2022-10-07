@@ -1,0 +1,139 @@
+.mainContainer {
+    display: block;
+}
+
+.mainTitle {
+    font-family: "Be Vietnam Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100.5%;
+    text-align: center;
+    color: black;
+    padding-top: 12rem;
+}
+
+.subTitle {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    margin-bottom: 10em;
+}
+
+.teamSection {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    margin-left: 10%;
+    width: 80%;
+    border-bottom: 2px solid #212121;
+}
+
+.teamSectionTitleContainer {
+    display: block;
+    justify-content: center;
+}
+
+.teamSectionTitle {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: black;
+    margin-bottom: 0em;
+    margin-left: 0em;
+}
+
+.teamSectionSubTitle {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #828282;
+    text-align: center;
+}
+
+.teamSectionHeader {
+    display: flex; /* This envelopes the skill set of the team and the title of the team */
+    flex: 1;
+    padding-left: 15em;
+    justify-content: center;
+}
+
+.teamSectionSkillsContainer {
+    flex: 0.6; /* The border-bottom line is adjusted by this. */
+    margin-top: 1em;
+    margin-left: 8em;
+}
+
+.teamSectionSkillsText {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #212121;
+    padding-left: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid #212121;
+}
+
+.teamSectionMemberHeader {
+    padding-top: 7em;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #212121;
+}
+
+.buttonContainerActive {
+    border: 2px solid #212121;
+    border-radius: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #212121;
+}
+
+.buttonContainerInactive {
+    border: 2px solid #212121;
+    border-radius: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #fbfbfb;
+}
+
+.buttonTextInactive {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #212121; 
+}
+
+.buttonTextActive {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fbfbfb; 
+}
+
+.buttonContainer:active {
+    box-shadow: 2px 2px 5px #fc894d;
+}
