@@ -43,16 +43,6 @@ const Navbar = ({children, href}) => {
     const screenSize = useWindowSize();
     const router = useRouter();
 
-    // const activeStyles = {
-    //   marginRight: 10,
-    //   color: router.asPath === href ? 'red' : 'black',
-    // }
-
-    // const handleClick = (e) => {
-    //   e.preventDefault()
-    //   router.push(href)
-    // }
-
     return screenSize.width <= 786 ? (
         <div>
             <nav className={styles.navbar}>
@@ -70,7 +60,7 @@ const Navbar = ({children, href}) => {
                     and if they are then choose the active style.
                     If not then, simply choose the Inactive style */}
                 <div className={ styles.navbarNavigation }>
-                    <a className={ router.asPath== "/" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive }
+                    <a className={ router.asPath == "/" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive }
                       href="/"></a>
                     <a className={ router.asPath == "/about" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
                       href="/about">Our Team</a>
