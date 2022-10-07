@@ -15,7 +15,7 @@ export default function Home()
       <Topsection/>
       <Pillars/>
       <Pastprojects/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
     
   )
