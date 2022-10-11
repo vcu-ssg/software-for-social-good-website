@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 
-export default function blog()
+export default function forstudents()
 {
     return(
         <div>

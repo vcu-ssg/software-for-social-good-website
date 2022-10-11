@@ -21,7 +21,7 @@ const developersTeam = [
         graduationyear: "Class of 2022"
     },
     {
-        name: "Sweta",
+        name: "Sweta Parajuli",
         major: "Computer Science",
         graduationyear: "Class of 2024"
     },

@@ -66,8 +66,8 @@ const Navbar = ({children, href}) => {
                       href="/about">Our Team</a>
                     <a className={ router.asPath == "/ourwork" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
                       href="/ourwork">Our Work</a>
-                    <a className={ router.asPath == "/blog" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
-                      href="/blog">For Students</a>
+                    <a className={ router.asPath == "/forstudents" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
+                      href="/forstudents">For Students</a>
                     <a className={ router.asPath == "/contactus" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
                       href="/contactus">Contact Us</a>
                 </div>
