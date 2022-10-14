@@ -192,3 +192,47 @@
     text-align: center;
     color: #212121;
 }
+
+.teamCultureSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.teamCultureHeader {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+
+    color: #212121;
+}
+
+.teamCultureCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Requires display: flex and it will move all the elements to the middle horizontally */
+    border: 2px solid #212121;
+    border-radius: 15px;
+    width: min-content;
+}
+
+.teamCultureDesc {
+
+    width: 15em;
+
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+
+    color: #212121;
+}

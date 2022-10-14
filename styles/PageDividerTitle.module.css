@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.lineLeft {
+    width: 10%;
+    height: 1px;
+
+    /* "Kian's Age" black */
+    border: 2px solid #212121;
+}
+
+.lineRight {
+
+    /* "Kian's Age" black */
+    width: 80%;
+    height: 1px;
+    border: 2px solid #212121;
+}
+
+.headerContainer {
+    width: fit-content;
+    white-space: nowrap; /* white-space nowrap causes the h1, h2, h3, and etc to go all on one line */
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.headerTitle{
+
+    color: #212121;
+}
+
