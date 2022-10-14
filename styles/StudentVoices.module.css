@@ -1,0 +1,57 @@
+.lineLeft {
+    position: absolute;
+    width: 225px;
+    height: 0px;
+    left: calc(50% - 225px/2 - 767.5px);
+    top: 1033px;
+
+    /* "Kian's Age" black */
+    border: 2px solid #212121;
+}
+
+.lineRight {
+
+    position: absolute;
+    width: 1260px;
+    height: 0px;
+    left: calc(50% - 1260px/2 + 252px);
+    top: 1033px;
+
+    /* "Kian's Age" black */
+
+    border: 2px solid #212121;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+
+    position: absolute;
+    width: 277px;
+    height: 43px;
+    left: calc(50% - 277px/2 - 516.5px);
+    top: 1011px;
+
+}
+
+.headerTitle{
+    width: 257px;
+    height: 43px;
+
+    /* Header 4 */
+
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 43px;
+    /* identical to box height */
+
+
+    /* "Kian's Age" black */
+
+    color: #212121;
+}
+

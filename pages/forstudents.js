@@ -1,5 +1,6 @@
-import ForStudentsLanding from "../components/ForStudentsLanding";
 import Navbar from "../components/Navbar";
+import ForStudentsLanding from "../components/ForStudentsLanding";
+import StudentVoices from "../components/StudentVoices";
 
 export default function forstudents()
 {
@@ -7,6 +8,7 @@ export default function forstudents()
         <div>
             <Navbar/>
             <ForStudentsLanding/>
+            <StudentVoices/>
         </div>
     )
 }
