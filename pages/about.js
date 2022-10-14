@@ -3,6 +3,8 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import styles from "../styles/About.module.css"
 import CardMembers from "../components/CardMembers";
+import PageDividerTitle from "../components/PageDividerTitle";
+import Footer from "../components/Footer";
 
 const developersTeam = [
     {
@@ -52,6 +54,29 @@ const operationsList = [
         orderNumber: 4,
         operationTitle: "Technical\nresearch",
         operationDesc: "The developers also conduct reserach on APIs, open sources, and databases to be used in the softwares."
+    }
+]
+
+const teamCulture = [
+    {
+        cardTitle: "Curious & Motivated",
+        cardDesc: "The SSG team is always curious and motivated. With their own unique vision, students find ways to use their skills and learn as they build."
+    },
+    {
+        cardTitle: "Professional Growth",
+        cardDesc: "By being part of SSG projects, students gain invaluable industry and process insight. The SSG provides a foundation for student success after college."
+    },
+    {
+        cardTitle: "Team Integrity",
+        cardDesc: "A great team makes great projects! We are not some mundane team for a school group project - The SSG thrives upon strong team spirit."
+    },
+    {
+        cardTitle: "Openness",
+        cardDesc: "We question what’s normal. Our students are not hesitant to say “no” when everyone says yes, and carefully listen to others’ voices."
+    },
+    {
+        cardTitle: "Having Fun!",
+        cardDesc: "Lastly, we care about having fun! Academic stress, grades, and output are important. Doing what students truly enjoy is what moves us."
     }
 ]
 
@@ -118,7 +143,19 @@ export default function about()
                             )
                         })}
                     </div>
+                    <PageDividerTitle text="Team Culture"/>
                 </div>
+                <div className= { styles.teamCultureSection }>
+                        {teamCulture.map((card) => {
+                            return(
+                                <div className={ styles.teamCultureCard }>
+                                    <h7 className={ styles.teamCultureHeader }> { card.cardTitle } </h7>
+                                    <p className={ styles.teamCultureDesc }> { card.cardDesc } </p>
+                                </div>
+                            )
+                        })}
+                </div>
+                <Footer/>
             </div>
         </div>
     )
