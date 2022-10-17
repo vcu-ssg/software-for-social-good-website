@@ -8,9 +8,10 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 100.5%;
-    text-align: center;
+    text-align: left;
     color: black;
-    padding-top: 12rem;
+    padding-top: 10rem;
+    padding-left: 13rem;
 }
 
 .subTitle {
@@ -19,23 +20,41 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
-    text-align: center;
+    text-align: left;
     color: black;
-    margin-bottom: 10em;
+    padding-left: 13rem;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLeft {
+    margin-right: 10%;
+    margin-left: 0;
+}
+
+.imageRight {
+    margin-left: 10%;
+    margin-right: 0;
+}
+
+.blackContainer {
+    background-color: #212121;
 }
 
 .teamSection {
     display: flex;
-    justify-content: center;
-    padding-bottom: 2em;
-    margin-left: 10%;
-    width: 80%;
+    width: 100%;
     border-bottom: 2px solid #212121;
+    padding-top: 4rem;
+    padding-left: 15rem;
 }
 
-.teamSectionTitleContainer {
-    display: block;
-    justify-content: center;
+.twoBlockStyle {
+    display: flex;
 }
 
 .teamSectionTitle {
@@ -43,8 +62,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
-    color: black;
-    margin-bottom: 0em;
+    color: #fbfbfb
 }
 
 .teamSectionSubTitle {
@@ -52,21 +70,21 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #828282;
+    color: #fbfbfb;
     text-align: center;
 }
 
 .teamSectionHeader {
-    display: flex; /* This envelopes the skill set of the team and the title of the team */
-    flex: 1;
-    padding-left: 15em;
-    justify-content: center;
+    display: inline-block; /* This envelopes the skill set of the team and the title of the team */
+    width: max-content;
+    padding-left: 15rem;
 }
 
 .teamSectionSkillsContainer {
-    flex: 0.6; /* The border-bottom line is adjusted by this. */
-    margin-top: 1em;
-    margin-left: 6em;
+    display: flex;
+    border-bottom: 2px solid #fbfbfb;
+    align-content: center;
+    align-items: center;
 }
 
 .teamSectionSkillsText {
@@ -74,23 +92,27 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #212121;
-    padding-left: 2em;
-    padding-bottom: 1.5em;
-    border-bottom: 2px solid #212121;
+    color: #fbfbfb;
+    white-space: nowrap;
+    padding-right: 4em;
 }
 
-.teamSectionMemberHeader {
-    padding-top: 5em;
+.teamSectionSkillsSubText {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    text-align: center;
-    color: #212121;
+    font-size: 20px;
+    color: #CCCCCC;
+    white-space: nowrap;
+}
+
+.teamSectionMemberHeader {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    padding-left: 5%;
+    color: #fbfbfb;
 }
 
 .teamSectionMemberContainer {
@@ -106,91 +128,75 @@
     border-radius: 40px;
     width: fit-content;
     height: fit-content;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 1em;
-    margin-right: 1em;
-    background-color: #212121;
-}
-
-.buttonContainerInactive {
-    border: 2px solid #212121;
-    border-radius: 40px;
-    width: fit-content;
-    height: fit-content;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-left: 1em;
     margin-right: 1em;
     background-color: #fbfbfb;
+}
+
+.buttonContainerInactive {
+    border: 2px solid #fbfbfb;
+    border-radius: 40px;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #212121;
 }
 
 .buttonTextInactive {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    color: #212121; 
+    font-size: 24px;
+    color: #fbfbfb; 
 }
 
 .buttonTextActive {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
-    color: #fbfbfb; 
+    font-size: 24px;
+    color: #212121; 
 }
 
 .operationContainer {
-    display: flex;
+    display: block;
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 10%;
 }
 
 .operationOuterBox {
-    width: 16%;
-}
-
-.operationBox {
     display: flex;
-    flex-direction: row;
-    width: 15em;
-    height: 50%;
+    align-items: center;
 }
 
 .operationTitle {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #212121;
-    width: 40em;
-    align-self: center;
-    padding-left: 0.5em;
-}
-
-.operationOrderNumber {
-    font-family: 'Be Vietnam Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    display: flex;
-    align-items: center;
-    color: #212121;
-    padding-left: 1em;
-    padding-right: 0.5em;
-    border-right: 2px solid #212121;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fbfbfb;
 }
 
 .operationDesc {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    text-align: center;
-    color: #212121;
+    font-size: 20px;
+    color: #CCCCCC;
+}
+
+.lineDivider {
+    /* "Kian's Age" black */
+    width: 90%;
+    margin-left: 5%;
+    height: 0px;
+    border: 2px solid #CCCCCC;
+    margin-top: 3%;
 }
 
 .teamCultureSection {
@@ -210,9 +216,9 @@
     display: flex;
     align-items: center;
     text-align: center;
-    white-space: nowrap;
+    white-space: nowrap; /* This gets rid of the white space of h1, h2, and other h# */
 
-    color: #212121;
+    color: #fbfbfb;
 }
 
 .teamCultureCard {
