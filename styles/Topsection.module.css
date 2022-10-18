@@ -1,0 +1,40 @@
+.topSectionContainer {
+    width: 1570px;
+    height: 100vh;
+    background-color: #F5F5F5;
+
+}
+
+.topSecText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 33px;
+
+    position: absolute;
+    width: 505px;
+    height: 314px;
+    left: 362px;
+    top: 359px;
+}
+
+.topSecHeader {
+    width: 410px;
+    height: 192px;
+
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+
+    display: flex;
+    align-items: center;
+
+    color: #212121;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

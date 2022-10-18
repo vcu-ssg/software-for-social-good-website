@@ -1,3 +1,4 @@
+import styles from '../styles/Topsection.module.css'
 import { useState, useEffect } from 'react';
 
 function useWindowSize() {
@@ -13,8 +14,10 @@ const Topsection = () => {
     const screenSize = useWindowSize();
 
     return(
-        <div className={ topSectionContainer } >
-            
+        <div className={ styles.topSectionContainer }>
+            <div className={ styles.topSecText }>
+                <h1 className={ styles.topSecHeader}>Software for Social Good</h1>
+            </div>
         </div>
     )
 }
