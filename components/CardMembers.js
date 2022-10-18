@@ -7,7 +7,7 @@ const CardMembers = (props) => {
         <div className={ styles.container }>
             <Image src={ props.imagePath } alt="Team Member Picture" />
             <p className={ styles.nameText }>{ props.name }</p>
-            <p className={ styles.majorYearText }>BS { props.major }</p>
+            <p className={ styles.majorYearText }>{ props.major }</p>
             <p className={ styles.majorYearText }>{ props.graduationyear }</p>
             <div>
                 <div>
