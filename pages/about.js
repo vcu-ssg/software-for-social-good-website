@@ -6,36 +6,100 @@ import styles from "../styles/About.module.css"
 import CardMembers from "../components/CardMembers";
 import PageDividerTitle from "../components/PageDividerTitle";
 import Footer from "../components/Footer";
+import KevinPic from "../public/KevinPic.png"
+import LenicePic from "../public/LenicePic.png"
+import DanielPic from "../public/DanielPic.png"
+import AneeshPic from "../public/AneeshPic.png"
+import inhoPic from "../public/inhoPic.png"
+import lizzyPic from "../public/lizzyPic.png"
+import kianPic from "../public/kianPic.png"
 
-const developersTeam = [
+const developTeam = [
     {
+        imagePath: KevinPic,
         name: "Kevin Ly",
-        major: "Computer Science",
-        graduationyear: "Class of 2023"
+        major: "BS Computer Science",
+        graduationyear: "2023",
+        linkedInURL: "https://www.linkedin.com/in/kevin-ly-7446941a2/"
     },
     {
+        imagePath: DanielPic,
         name: "Daniel Tran",
-        major: "Computer Science",
-        graduationyear: "Class of 2024"
+        major: "BS Computer Science",
+        graduationyear: "2024",
+        linkedInURL: "https://www.linkedin.com/in/tranhdaniel/"
     },
     {
+        imagePath: LenicePic ,
         name: "Lenice Jackson",
-        major: "Computer Science",
-        graduationyear: "Class of 2022"
+        major: "BS Computer Science",
+        graduationyear: "2022",
+        linkedInURL: "https://www.linkedin.com/in/lenice-jackson/"
     },
     {
         name: "Sweta Parajuli",
-        major: "Computer Science",
-        graduationyear: "Class of 2024"
+        major: "BS Computer Science",
+        graduationyear: "2024",
+        linkedInURL: "https://www.linkedin.com/in/sweta-parajuli-b08b321ab/"
     },
     {
-        name: "Aneesh Sai",
-        major: "Computer Science",
-        graduationyear: "Class of 2024"
+        imagePath: AneeshPic,
+        name: "Aneesh Mussim",
+        major: "BS Computer Science",
+        graduationyear: "2024",
+        linkedInURL: "https://www.linkedin.com/in/aneesh-mussim-49a987195/"
     }
 ];
 
-const operationsList = [
+const designTeam = [
+    {
+        imagePath: inhoPic,
+        name: "Inho Park",
+        major: "BFA Graphic Design",
+        graduationyear: "2024",
+        linkedInURL: "https://www.linkedin.com/in/inho-park-0752b5140/"
+    },
+    {
+        imagePath: lizzyPic,
+        name: "Lizzy Shin",
+        major: "BFA Graphic Design",
+        graduationyear: "2023",
+        linkedInURL: "https://www.linkedin.com/in/lizzy-shin-669873236/"
+    },
+    {
+        imagePath: kianPic,
+        name: "Kian Thornton",
+        major: "BIS Product Design",
+        graduationyear: "2023",
+        linkedInURL: "https://www.linkedin.com/in/kian-thornton/"
+    }
+]
+
+const userResearchTeam = [
+    {
+        imagePath: inhoPic,
+        name: "Inho Park",
+        major: "BFA Graphic Design",
+        graduationyear: "2024",
+        linkedInURL: "https://www.linkedin.com/in/inho-park-0752b5140/"
+    },
+    {
+        imagePath: kianPic,
+        name: "Kian Thornton",
+        major: "BIS Product Design",
+        graduationyear: "2023",
+        linkedInURL: "https://www.linkedin.com/in/kian-thornton/"
+    },
+    {
+        imagePath: LenicePic ,
+        name: "Lenice Jackson",
+        major: "BS Computer Science",
+        graduationyear: "2022",
+        linkedInURL: "https://www.linkedin.com/in/lenice-jackson/"
+    }
+]
+
+const operationsDevList = [
     {
         orderNumber: 1,
         operationTitle: "Faculty\nguidance",
@@ -55,6 +119,52 @@ const operationsList = [
         orderNumber: 4,
         operationTitle: "Technical\nresearch",
         operationDesc: "The developers also conduct reserach on APIs, open sources, and databases to be used in the softwares."
+    }
+]
+
+const operationsDesList = [
+    {
+        orderNumber: 1,
+        operationTitle: "Faculty\nguidance",
+        operationDesc: "Students work with faculty mentorship from\nVCU. This helps them to work in an efficient\nand smart manner."
+    },
+    {
+        orderNumber: 2,
+        operationTitle: "Insights from\npartnered org",
+        operationDesc: "Developers gain insights from the partnered organizations to see how they solved the same problem."
+    },
+    {
+        orderNumber: 3,
+        operationTitle: "Communication\nwith developers",
+        operationDesc: "Because what we imagine needs to be feasible, designers communicate transparently with developers."
+    },
+    {
+        orderNumber: 4,
+        operationTitle: "Working with User Researchers",
+        operationDesc: "Designers work closely with the researchers to design softwares that satisfies target users’ needs."
+    }
+]
+
+const operationsUserResList = [
+    {
+        orderNumber: 1,
+        operationTitle: "Faculty\nguidance",
+        operationDesc: "Students work with faculty mentorship from\nVCU. This helps them to work in an efficient\nand smart manner."
+    },
+    {
+        orderNumber: 2,
+        operationTitle: "Insights from\npartnered org",
+        operationDesc: "Developers gain insights from the partnered organizations to see how they solved the same problem."
+    },
+    {
+        orderNumber: 3,
+        operationTitle: "Communication\nwith designers",
+        operationDesc: "The researchers provides research data to designers to help them understand what’s the best for the users. "
+    },
+    {
+        orderNumber: 4,
+        operationTitle: "Interviews & surveys",
+        operationDesc: "Students conduct interviews not only to gain data, but also to hear people’s voice and connect communities."
     }
 ]
 
@@ -120,19 +230,46 @@ export default function about()
                     </div>
                     <div className={ styles.twoBlockStyle }>
                         <div className={ styles.teamSectionHeader }>
-                            <h3 className={ styles.teamSectionTitle }>Develop</h3>
-                            <div className={ styles.teamSectionSkillsContainer }>
-                                <p className={ styles.teamSectionSkillsText }>Front-end</p>
-                                <p className={ styles.teamSectionSkillsSubText }>Next.js, React.js, Angular, Vue.js</p>
-                            </div>
-                            <div className={ styles.teamSectionSkillsContainer }>
-                                <p className={ styles.teamSectionSkillsText }>Back-end</p>
-                                <p className={ styles.teamSectionSkillsSubText }>PHP, Python, Java</p>
-                            </div>
+                            {team == "Develop"
+                            ?
+                                <div> 
+                                    <h3 className={ styles.teamSectionTitle }>Develop</h3>
+                                    <div className={ styles.teamSectionSkillsContainer }>
+                                        <p className={ styles.teamSectionSkillsText }>Front-end</p>
+                                        <p className={ styles.teamSectionSkillsSubText }>Next.js, React.js, Angular, Vue.js</p>
+                                    </div>
+                                    <div className={ styles.teamSectionSkillsContainer }>
+                                        <p className={ styles.teamSectionSkillsText }>Back-end</p>
+                                        <p className={ styles.teamSectionSkillsSubText }>PHP, Python, Java</p>
+                                    </div>
+                                </div>  
+                            : (team == "Design")
+                            ?
+                                <div> 
+                                    <h3 className={ styles.teamSectionTitle }>Design</h3>
+                                    <div className={ styles.teamSectionSkillsContainerDesc }>
+                                        <p className={ styles.teamSectionSkillsText }>Using tools like Figma and Adobe Creative Suite, 
+                                        the designers are responsible for ideating product concepts, prototyping, 
+                                        creating consistant visual styles, and content management. </p>
+                                    </div>
+                                </div>  
+                            :
+                                <div> 
+                                    <h3 className={ styles.teamSectionTitle }>User Research</h3>
+                                    <div className={ styles.teamSectionSkillsContainerDesc }>
+                                        <p className={ styles.teamSectionSkillsText }>By conducting qualitative & quantitative research, as well as usability studies, 
+                                        the researchers build personas, user journey map, and other meanigful data that 
+                                        validates our product design concept.</p>
+                                    </div>
+                                </div>  
+
+                            }
                         </div>
                         <div className={ styles.operationContainer }>
                             <h3 className={ styles.teamSectionTitle }>How We Operate</h3>
-                            {operationsList.map((operation) => {
+                            {team == "Develop"
+                            ?
+                                operationsDevList.map((operation) => {
                                     return(
                                         <div className={ styles.operationOuterBox }>
                                             <div style={{marginRight: 10 + "rem", left: 0, width: 20 + "%"}}>
@@ -143,29 +280,76 @@ export default function about()
                                             </div>
                                         </div>
                                     )
-                            })}
+                                })
+                            : team == "Design"
+                            ?
+                                operationsDesList.map((operation) => {
+                                    return(
+                                        <div className={ styles.operationOuterBox }>
+                                            <div style={{marginRight: 10 + "rem", left: 0, width: 20 + "%"}}>
+                                                <h4 className={ styles.operationTitle }>{ operation.operationTitle }</h4>
+                                            </div>
+                                            <div style={{marginRight: "auto", left: 0, width: 50 + "%"}}>
+                                                <blockquote className={ styles.operationDesc }>{ operation.operationDesc }</blockquote>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            :
+                                operationsUserResList.map((operation) => {
+                                    return(
+                                        <div className={ styles.operationOuterBox }>
+                                            <div style={{marginRight: 10 + "rem", left: 0, width: 20 + "%"}}>
+                                                <h4 className={ styles.operationTitle }>{ operation.operationTitle }</h4>
+                                            </div>
+                                            <div style={{marginRight: "auto", left: 0, width: 50 + "%"}}>
+                                                <blockquote className={ styles.operationDesc }>{ operation.operationDesc }</blockquote>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                            
                         </div>
                     </div>
                     <div className={ styles.lineDivider } />
-                    {/* End of middle, dark section of the Our Team Page */}
+                    
                     <div>
                         <h5 className={ styles.teamSectionMemberHeader }>Meet Our Developers</h5>
                         <div className={ styles.teamSectionMemberContainer }>
-                            {developersTeam.map((member) => {
-                                return(
-                                    <CardMembers name={ member.name } major={ member.major } graduationyear={ member.graduationyear }/>
-                                )
-                            })}
+                            {team == "Develop"
+                            ?
+                                developTeam.map((member) => {
+                                    return(
+                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } name={ member.name } major={ member.major } graduationyear={ member.graduationyear }/>
+                                    )
+                                })
+                            : team == "Design"
+                            ?
+                                designTeam.map((member) => {
+                                    return(
+                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } name={ member.name } major={ member.major } graduationyear={ member.graduationyear }/>
+                                    )
+                                })
+                            :
+                                userResearchTeam.map((member) => {
+                                    return(
+                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } name={ member.name } major={ member.major } graduationyear={ member.graduationyear }/>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
+                {/* End of middle, dark section of the Our Team Page */}
                 <div>
-                    <PageDividerTitle text="Team Culture"/>
+                    <h6 className={ styles.teamCultureTitle }>Team Culture</h6>
                 </div>
                 <div className= { styles.teamCultureSection }>
-                        {teamCulture.map((card) => {
+                        {teamCulture.map((card, index) => {
                             return(
                                 <div className={ styles.teamCultureCard }>
+                                    <p className={ styles.teamCultureNumber }>0{index + 1} </p>
                                     <h7 className={ styles.teamCultureHeader }> { card.cardTitle } </h7>
                                     <p className={ styles.teamCultureDesc }> { card.cardDesc } </p>
                                 </div>
