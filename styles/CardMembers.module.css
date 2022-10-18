@@ -7,8 +7,15 @@
 .nameText {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fbfbfb;
+}
+
+.majorYearText {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
     color: #fbfbfb;
 }

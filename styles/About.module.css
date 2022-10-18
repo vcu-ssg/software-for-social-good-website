@@ -43,6 +43,7 @@
 
 .blackContainer {
     background-color: #212121;
+    padding-bottom: 6rem;
 }
 
 .teamSection {
@@ -85,6 +86,15 @@
     border-bottom: 2px solid #fbfbfb;
     align-content: center;
     align-items: center;
+    width: 40rem;
+}
+
+.teamSectionSkillsContainerDesc {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 40rem;
+    word-break: keep-all;
 }
 
 .teamSectionSkillsText {
@@ -93,7 +103,6 @@
     font-weight: 600;
     font-size: 24px;
     color: #fbfbfb;
-    white-space: nowrap;
     padding-right: 4em;
 }
 
@@ -167,6 +176,7 @@
     display: block;
     flex-direction: row;
     padding-left: 10%;
+    height: 40rem;
 }
 
 .operationOuterBox {
@@ -201,44 +211,63 @@
 
 .teamCultureSection {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+}
+
+.teamCultureTitle {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 128px;
+    color: #212121;
+    padding-bottom: 0px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    
 }
 
 .teamCultureHeader {
+    width: 15em;
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 30px;
     display: flex;
-    align-items: center;
-    text-align: center;
     white-space: nowrap; /* This gets rid of the white space of h1, h2, and other h# */
+    margin-right: 15rem;
 
-    color: #fbfbfb;
+    color: #212121;
+}
+
+.teamCultureNumber {
+    width: 2em;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    white-space: nowrap; /* This gets rid of the white space of h1, h2, and other h# */
+    margin-right: 4em;
+
+    color: #212121;
 }
 
 .teamCultureCard {
     display: flex;
-    flex-direction: column;
     align-items: center; /* Requires display: flex and it will move all the elements to the middle horizontally */
-    border: 2px solid #212121;
-    border-radius: 15px;
     width: min-content;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .teamCultureDesc {
 
-    width: 15em;
-
+    width: 23em;
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
-    text-align: center;
 
     color: #212121;
 }
