@@ -27,3 +27,13 @@ a {
     background: rgb(255, 255, 255); /* This is the background of the website */
   }
 }
+
+/* Homepage */
+/* Top Section */
+
+.topSectionContainer{
+  width: 1570px;
+  height: 100vh;
+  margin-left: 96px;
+  margin-right: 96px;
+}
