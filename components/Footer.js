@@ -4,10 +4,8 @@ const Footer = () =>
 {
     
     return(
-        <div>
-            <nav className={ styles.footer }>
-
-            </nav>
+        <div className={ styles.container }>
+            <p>Software for Social Good</p>
         </div>
     )
 }

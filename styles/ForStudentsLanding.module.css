@@ -1,0 +1,93 @@
+.main {
+    position: absolute;
+    width: 399px;
+    height: 61px;
+    left: calc(50% - 399px/2 - 235.5px);
+    top: 340px;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #212121;
+}
+
+.scrollWheel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    isolation: isolate;
+
+    font-size: 60px;
+
+    position: absolute;
+    width: 556px;
+    height: 214px;
+    left: calc(50% + 200px/2);
+    top: 264px;
+    overflow-y: scroll;
+    color: #212121;
+}
+
+.sub{
+    position: absolute;
+    width: 870px;
+    height: 92px;
+    left: calc(50% - 870px/2);
+    top: 625px;
+
+    /* Header 6 */
+
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    /* "Kian's Age" black */
+    color: #212121;
+}
+
+.buttonFAQ {
+   /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+
+    position: absolute;
+    width: 210px;
+    height: 45px;
+    left: calc(50% - 210px/2 - 110px);
+    top: 780px;
+
+    /* "Kian's Age" black */
+
+    background: #212121;
+    border-radius: 18px;
+}
+
+.buttonJoin {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+
+    position: absolute;
+    width: 209px;
+    height: 45px;
+    left: calc(50% - 209px/2 + 110.5px);
+    top: 780px;
+
+    /* "Kian's Age" black */
+
+    background: #212121;
+    border-radius: 18px;
+}
