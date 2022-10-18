@@ -233,7 +233,7 @@ export default function about()
                             {team == "Develop"
                             ?
                                 <div> 
-                                    <h3 className={ styles.teamSectionTitle }>Develop</h3>
+                                    <h3 className={ styles.teamSectionTitle }>{ team }</h3>
                                     <div className={ styles.teamSectionSkillsContainer }>
                                         <p className={ styles.teamSectionSkillsText }>Front-end</p>
                                         <p className={ styles.teamSectionSkillsSubText }>Next.js, React.js, Angular, Vue.js</p>
@@ -246,7 +246,7 @@ export default function about()
                             : (team == "Design")
                             ?
                                 <div> 
-                                    <h3 className={ styles.teamSectionTitle }>Design</h3>
+                                    <h3 className={ styles.teamSectionTitle }>{ team }</h3>
                                     <div className={ styles.teamSectionSkillsContainerDesc }>
                                         <p className={ styles.teamSectionSkillsText }>Using tools like Figma and Adobe Creative Suite, 
                                         the designers are responsible for ideating product concepts, prototyping, 
@@ -255,7 +255,7 @@ export default function about()
                                 </div>  
                             :
                                 <div> 
-                                    <h3 className={ styles.teamSectionTitle }>User Research</h3>
+                                    <h3 className={ styles.teamSectionTitle }>{ team }</h3>
                                     <div className={ styles.teamSectionSkillsContainerDesc }>
                                         <p className={ styles.teamSectionSkillsText }>By conducting qualitative & quantitative research, as well as usability studies, 
                                         the researchers build personas, user journey map, and other meanigful data that 
@@ -315,7 +315,7 @@ export default function about()
                     <div className={ styles.lineDivider } />
                     
                     <div>
-                        <h5 className={ styles.teamSectionMemberHeader }>Meet Our Developers</h5>
+                        <h5 className={ styles.teamSectionMemberHeader }>Meet Our { team }ers</h5>
                         <div className={ styles.teamSectionMemberContainer }>
                             {team == "Develop"
                             ?
