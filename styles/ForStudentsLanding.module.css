@@ -11,6 +11,116 @@
     color: #212121;
 }
 
+.frame {
+    position: absolute;
+    width: 1000px;
+    height: 180px;
+    gap: 20px;
+    top: 306px;
+    left: calc(50% - 399px/2 - 250px);
+    overflow-y: scroll;
+}
+
+.carousel {
+    position: relative;
+    text-align: left;
+    font-size: 48px;
+    line-height: 61px;
+    width: 1000px;
+    height: 214px;
+}
+
+.carousel .change_outer {
+    position: absolute;
+    top: 0;
+    left: 46%;
+    text-align: left;
+    height: 61px;
+}
+
+.carousel .change_outer .change_inner {
+    position: relative;
+    animation: scrollThrough 20s ease-in-out infinite;
+}
+
+.carousel .change_outer .element {
+    display: block;
+    font-weight: 700;
+    color: #212121;
+
+}
+@keyframes scrollThrough {
+    0%, 7.143%{
+        transform: translateY(60px);
+        transform: opacity(100%);
+    }
+
+    7.143%, 14.286% {
+        transform: translateY(0px);
+        transform: opacity(75%);
+    }
+
+    14.286%, 21.429% {
+        transform: translateY(-60px);
+        transform: opacity(50%);
+    }
+
+    21.429%, 28.572% {
+        transform: translateY(calc(-60px * 2));
+        transform: opacity(25%);
+    }
+
+    28.572%, 36.715% {
+        transform: translateY(calc(-60px * 3));
+        transform: opacity(0%);
+    }
+
+    36.715%, 42.858% {
+        transform: translateY(calc(-60px * 4));
+        transform: opacity(0%);
+    }
+
+    42.858%,  50.001% {
+        transform: translateY(calc(-60px * 5));
+        transform: opacity(0%);
+    }
+
+    50.001%, 57.144% {
+        transform: translateY(calc(-60px * 6));
+        transform: opacity(0%);
+    }
+
+    57.144%, 64.287% {
+        transform: translateY(calc(-60px * 7));
+        transform: opacity(0%);
+    }
+
+    64.287%, 71.43% {
+        transform: translateY(calc(-60px * 8));
+        transform: opacity(0%);
+    }
+
+    71.43%, 78.573% {
+        transform: translateY(calc(-60px * 9));
+        transform: opacity(0%);
+    }
+
+    78.573%, 85.716% {
+        transform: translateY(calc(-60px * 10));
+        transform: opacity(0%);
+    }
+
+    85.716%, 92.859% {
+        transform: translateY(calc(-60px * 11));
+        transform: opacity(0%);
+    }
+
+    92.859%, 100% {
+        transform: translateY(calc(-60px * 11));
+        transform: opacity(0%);
+    }
+}
+
 .scrollWheel {
     display: flex;
     flex-direction: column;
