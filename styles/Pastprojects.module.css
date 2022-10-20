@@ -81,6 +81,13 @@
     border: 4px solid #828282;
 }
 
+
+.buttonBox {
+    left: 92.8%;
+    top: 100%;
+    position: relative;
+}
+
 .proposeButton {
     display: flex;
     flex-direction: column;
@@ -90,8 +97,7 @@
     position: absolute;
     width: 236px;
     height: 58px;
-    left: calc(50% - 236px/2);
-    top: 272%;
+    
     background: #212121;
     border-radius: 30px;
 }

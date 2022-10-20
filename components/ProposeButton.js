@@ -1,4 +1,4 @@
-import styles from '../styles/_Pastprojects.module.css'
+import styles from '../styles/Pastprojects.module.css'
 import Link from 'next/link'
 
 const ProposeButton = () => 
@@ -7,7 +7,7 @@ const ProposeButton = () =>
         <div>
             <Link href='/contactus'>
                 <button className={ styles.proposeButton}>
-                        <h5 className= { styles.buttonText }>Learn more about us</h5>
+                        <h5 className= { styles.buttonText }>Propose a Project</h5>
                 </button>
            </Link>
         </div>

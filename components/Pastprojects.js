@@ -1,4 +1,5 @@
 import styles from '../styles/Pastprojects.module.css'
+import ProposeButton from './ProposeButton';
 
 const Pastprojects = () => 
 {
@@ -15,9 +16,9 @@ const Pastprojects = () =>
                 <div className={ styles.lineOne }/>
                 <div className={ styles.lineTwo }/>
             </div>
-            <button className={ styles.proposeButton }>
-                <h2 className={ styles.buttonText }> Propose a project</h2>
-            </button>
+            <div className={ styles.buttonBox}>
+                <ProposeButton/>
+            </div>
         </div>
     )
 }
