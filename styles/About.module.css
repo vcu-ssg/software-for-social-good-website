@@ -56,6 +56,7 @@
 
 .twoBlockStyle {
     display: flex;
+    height: min-content;
 }
 
 .teamSectionTitle {
@@ -176,12 +177,11 @@
     display: block;
     flex-direction: row;
     padding-left: 10%;
-    height: 40rem;
+    height: auto;
 }
 
 .operationOuterBox {
     display: flex;
-    align-items: center;
 }
 
 .operationTitle {
@@ -196,7 +196,7 @@
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
     color: #CCCCCC;
 }
 
@@ -213,19 +213,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 200px;
+}
+
+.outerSlideContainer {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+}
+
+.innerSlideContainer{
+    left: -100%;
+    position: absolute;
+    overflow: hidden;
+    animation: slide 9s linear infinite;
 }
 
 .teamCultureTitle {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 800;
-    font-size: 128px;
+    font-size: 200px;
     color: #212121;
     padding-bottom: 0px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-    
+    margin-top: 0rem;
 }
 
 .teamCultureHeader {
@@ -237,6 +248,7 @@
     display: flex;
     white-space: nowrap; /* This gets rid of the white space of h1, h2, and other h# */
     margin-right: 15rem;
+    padding-top: 0em;
 
     color: #212121;
 }
@@ -270,4 +282,13 @@
     font-size: 16px;
 
     color: #212121;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(400%, 0, 0);
+    }
 }
