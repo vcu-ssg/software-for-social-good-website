@@ -1,13 +1,83 @@
 .container {
     display: flex;
     width: 100%;
-    height: 20rem;
+    height: 100%;
     background: #212121;
 }
 
-.footer {
-    background: #212121;
-    left: 0%;
-    right: 0%;
-    bottom: 0;
+.innerContainer {
+    display: flex;
+    width: 86%;
+    margin-left: 10rem;
+    margin-top: 6rem;
+    border-bottom: 2px solid #B0B0B0;
+    margin-bottom: 4rem;
+}
+
+.ssgBrandContainer {
+    display: flex;
+}
+
+.ssgGraphicContainer {
+    display: block;
+}
+
+.ssgLogo {
+    border-right: 2px solid #fbfbfb;
+    padding-right: 0.5rem;
+}
+
+.ssgName {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fbfbfb;
+    margin-top: 0rem;
+    margin-left: 1rem;
+}
+
+.vcuContainer {
+    margin-top: 80%;
+    margin-bottom: 0rem;
+}
+
+.infoContainer {
+    display: block;
+    margin-left: auto; 
+    margin-right: 12rem;
+    top: 0rem;
+}
+
+.infoItemContainer {
+    margin-bottom: 2rem;
+}
+
+.infoHeaderContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 0rem;
+    height: min-content;
+}
+
+.infoHeaderText {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #B0B0B0;
+    margin-top: 0rem; /* This gets rid of the margins of the text when increasing the font-size */
+    margin-bottom: 0rem; /* This gets rid of the margins of the text when increasing the font-size */
+}
+
+.infoText {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }

@@ -10,12 +10,20 @@ const CardMembers = (props) => {
             <p className={ styles.majorYearText }>{ props.major }</p>
             <p className={ styles.majorYearText }>{ props.graduationyear }</p>
             <div>
-                <div>
+                <div style={{ marginBottom: 0.5 + "rem" }}>
                     <img src="/ArrowRight.svg" alt="Arrow Right" style={{ marginRight: 1 + "rem" }}/>
                     <a href={ props.linkedInURL }>LinkedIn</a>
                 </div>
-                
-                
+                {
+                    (props.portfolioURL)
+                    ?
+                    <div>
+                        <img src="/ArrowRight.svg" alt="Arrow Right" style={{ marginRight: 1 + "rem" }}/>
+                        <a href={ props.portfolioURL }>Portfolio</a>
+                    </div>
+                    :
+                    <div/>
+                }
             </div>
             
         </div>

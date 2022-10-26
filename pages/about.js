@@ -4,12 +4,12 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import styles from "../styles/About.module.css"
 import CardMembers from "../components/CardMembers";
-import PageDividerTitle from "../components/PageDividerTitle";
 import Footer from "../components/Footer";
 import KevinPic from "../public/KevinPic.png"
 import LenicePic from "../public/LenicePic.png"
 import DanielPic from "../public/DanielPic.png"
 import AneeshPic from "../public/AneeshPic.png"
+import swetaPic from "../public/swetaPic.png"
 import inhoPic from "../public/inhoPic.png"
 import lizzyPic from "../public/lizzyPic.png"
 import kianPic from "../public/kianPic.png"
@@ -37,6 +37,7 @@ const developTeam = [
         linkedInURL: "https://www.linkedin.com/in/lenice-jackson/"
     },
     {
+        imagePath: swetaPic,
         name: "Sweta Parajuli",
         major: "BS Computer Science",
         graduationyear: "2024",
@@ -64,7 +65,8 @@ const designTeam = [
         name: "Lizzy Shin",
         major: "BFA Graphic Design",
         graduationyear: "2023",
-        linkedInURL: "https://www.linkedin.com/in/lizzy-shin-669873236/"
+        linkedInURL: "https://www.linkedin.com/in/lizzy-shin-669873236/",
+        portfolioURL: "https://lizzyshin.cargo.site/"
     },
     {
         imagePath: kianPic,
@@ -272,8 +274,8 @@ export default function about()
                                 operationsDevList.map((operation) => {
                                     return(
                                         <div className={ styles.operationOuterBox }>
-                                            <div style={{marginRight: 10 + "rem", left: 0, width: 20 + "%"}}>
-                                                <h4 className={ styles.operationTitle }>{ operation.operationTitle }</h4>
+                                            <div style={{marginRight: 10 + "rem", left: 0, width: 25 + "%"}}>
+                                                <p className={ styles.operationTitle }>{ operation.operationTitle }</p>
                                             </div>
                                             <div style={{marginRight: "auto", left: 0, width: 50 + "%"}}>
                                                 <blockquote className={ styles.operationDesc }>{ operation.operationDesc }</blockquote>
@@ -286,8 +288,8 @@ export default function about()
                                 operationsDesList.map((operation) => {
                                     return(
                                         <div className={ styles.operationOuterBox }>
-                                            <div style={{marginRight: 10 + "rem", left: 0, width: 20 + "%"}}>
-                                                <h4 className={ styles.operationTitle }>{ operation.operationTitle }</h4>
+                                            <div style={{marginRight: 10 + "rem", left: 0, width: 25 + "%"}}>
+                                                <p className={ styles.operationTitle }>{ operation.operationTitle }</p>
                                             </div>
                                             <div style={{marginRight: "auto", left: 0, width: 50 + "%"}}>
                                                 <blockquote className={ styles.operationDesc }>{ operation.operationDesc }</blockquote>
@@ -299,8 +301,8 @@ export default function about()
                                 operationsUserResList.map((operation) => {
                                     return(
                                         <div className={ styles.operationOuterBox }>
-                                            <div style={{marginRight: 10 + "rem", left: 0, width: 20 + "%"}}>
-                                                <h4 className={ styles.operationTitle }>{ operation.operationTitle }</h4>
+                                            <div style={{marginRight: 10 + "rem", left: 0, width: 25 + "%"}}>
+                                                <p className={ styles.operationTitle }>{ operation.operationTitle }</p>
                                             </div>
                                             <div style={{marginRight: "auto", left: 0, width: 50 + "%"}}>
                                                 <blockquote className={ styles.operationDesc }>{ operation.operationDesc }</blockquote>
@@ -309,11 +311,9 @@ export default function about()
                                     )
                                 })
                             }
-                            
                         </div>
                     </div>
                     <div className={ styles.lineDivider } />
-                    
                     <div>
                         <h5 className={ styles.teamSectionMemberHeader }>Meet Our { team }ers</h5>
                         <div className={ styles.teamSectionMemberContainer }>
@@ -321,20 +321,26 @@ export default function about()
                             ?
                                 developTeam.map((member) => {
                                     return(
-                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } name={ member.name } major={ member.major } graduationyear={ member.graduationyear }/>
+                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } 
+                                        name={ member.name } major={ member.major } graduationyear={ member.graduationyear }
+                                        portfolioURL={ member.portfolioURL }/>
                                     )
                                 })
                             : team == "Design"
                             ?
                                 designTeam.map((member) => {
                                     return(
-                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } name={ member.name } major={ member.major } graduationyear={ member.graduationyear }/>
+                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath }
+                                        name={ member.name } major={ member.major } graduationyear={ member.graduationyear }
+                                        portfolioURL={ member.portfolioURL }/>
                                     )
                                 })
                             :
                                 userResearchTeam.map((member) => {
                                     return(
-                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } name={ member.name } major={ member.major } graduationyear={ member.graduationyear }/>
+                                        <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } 
+                                        name={ member.name } major={ member.major } graduationyear={ member.graduationyear }
+                                        portfolioURL={ member.portfolioURL }/>
                                     )
                                 })
                             }
@@ -342,15 +348,17 @@ export default function about()
                     </div>
                 </div>
                 {/* End of middle, dark section of the Our Team Page */}
-                <div>
-                    <h6 className={ styles.teamCultureTitle }>Team Culture</h6>
+                <div className={ styles.outerSlideContainer }>
+                    <div className={ styles.innerSlideContainer }>
+                        <h6 className={ styles.teamCultureTitle }>Team Culture</h6>
+                    </div>
                 </div>
                 <div className= { styles.teamCultureSection }>
                         {teamCulture.map((card, index) => {
                             return(
                                 <div className={ styles.teamCultureCard }>
                                     <p className={ styles.teamCultureNumber }>0{index + 1} </p>
-                                    <h7 className={ styles.teamCultureHeader }> { card.cardTitle } </h7>
+                                    <p className={ styles.teamCultureHeader }> { card.cardTitle } </p>
                                     <p className={ styles.teamCultureDesc }> { card.cardDesc } </p>
                                 </div>
                             )
