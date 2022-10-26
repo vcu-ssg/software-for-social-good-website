@@ -6,20 +6,37 @@ import Pillars from '../components/Pillars'
 import Pastprojects from '../components/Pastprojects'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Home()
 {
   return(
     <div>
       <Navbar/>
-      <Topsection/>
-      <Pillars/>
-      <Pastprojects/>
-      {/* <Footer/> */}
+      <div className={ styles.topSectionContainer }>
+        <div className={ styles.mainContainer}>
+          <Topsection/>
+        </div>
+      </div>
+      <div className={ styles.pillarContainer }>
+        <div className= {styles.mainContainer}>
+          <Pillars/>
+        </div>
+      </div>
+      <div className={ styles.projectsContainer }>
+        <div className= {styles.mainContainer}>
+          <Pastprojects/>
+        </div>
+      </div>
+      <Footer/>
     </div>
     
   )
 }
+
+
+
 
 
 

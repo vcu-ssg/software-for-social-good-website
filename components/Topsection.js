@@ -1,22 +1,23 @@
 import styles from '../styles/Topsection.module.css'
-import { useState, useEffect } from 'react';
-
-function useWindowSize() {
-    // Initialize state with undefined width/height so server and client renders match
-    // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-    const [windowSize, setWindowSize] = useState({
-      width: undefined,
-      height: undefined,
-    });
-}
+import LearnMoreButton from './LearnMoreButton';
+import Image from "next/image";
 
 const Topsection = () => {
-    const screenSize = useWindowSize();
 
     return(
-        <div className={ styles.topSectionContainer }>
+        <div  className={ styles.itemContainer }>
             <div className={ styles.topSecText }>
-                <h1 className={ styles.topSecHeader}>Software for Social Good</h1>
+                <h1 className={ styles.topSecHeader}>Software for Social <br/>Good</h1>
+                <h5 className={ styles.topSecSubheader}> We connect VCU students with outer communities through projects that brings social impact. </h5>
+            </div>
+            <div>
+                <LearnMoreButton/>
+            </div>
+            <div className={ styles.imageContainer }>
+                <Image src="/topSecImg.svg" width="719" height="597" placeholder="empty" />
+            </div>
+            <div className={ styles.firstScroll }>
+                <Image src="/buttonScrollDown.svg" width="69" height="69" />
             </div>
         </div>
     )

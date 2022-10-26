@@ -1,7 +1,10 @@
-.topSectionContainer {
-    width: 1570px;
-    height: 100vh;
-    background-color: #F5F5F5;
+.itemContainer {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1220px;
+    height: 607px;
+    left: 362px;
+    top: 200px;
 
 }
 
@@ -11,30 +14,87 @@
     align-items: flex-start;
     padding: 0px;
     gap: 33px;
-
-    position: absolute;
     width: 505px;
     height: 314px;
-    left: 362px;
-    top: 359px;
+
 }
 
 .topSecHeader {
     width: 410px;
     height: 192px;
-
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 64px;
-
     display: flex;
     align-items: center;
-
-    color: #212121;
-
     flex: none;
     order: 0;
     flex-grow: 0;
+    padding-top: 110px;
+}
+
+.topSecSubheader {
+    width: 505px;
+    height: 89px;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'case' on;
+    color: #212121;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding-bottom: 50px;
+}
+
+.learnButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    position: absolute;
+    width: 242px;
+    height: 58px;
+    left: 0px;
+    bottom: 90px;
+    background: #212121;
+    border-radius: 30px;
+}
+
+.buttonText {
+    width: 142px;
+    height: 18px;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FBFBFB;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.imageContainer {
+    position: absolute;
+    width: 719px;
+    height: 597px;
+    right: 0px;
+    top: 4px;
+}
+
+.firstScroll {
+    position: absolute;
+    left: 46.3%;
+    top: 110%;
 }
