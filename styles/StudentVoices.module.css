@@ -1,0 +1,112 @@
+.voicesHeader {
+    position: absolute;
+    width: 363px;
+    height: 61px;
+    left: calc(50% - 363px/2 - 480.5px);
+    top: 1029px;
+}
+
+.header {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 61px;
+
+    display: flex;
+    align-items: center;
+
+    color: #212121;
+}
+
+.quoteTop {
+
+position: absolute;
+width: 89px;
+height: 139px;
+left: calc(50% - 363px/2 - 280.5px);
+top: 1216px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 250px;
+line-height: 316px;
+text-align: center;
+
+/* "Kian's Age" black */
+
+color: #212121;
+
+opacity: 0.3;
+}
+
+.quoteBottom {
+
+position: absolute;
+width: 89px;
+height: 139px;
+left: calc(50% + 500.5px);
+top: 1489px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 250px;
+line-height: 316px;
+text-align: center;
+
+/* "Kian's Age" black */
+
+color: #212121;
+
+opacity: 0.3;
+transform: rotate(-180deg);
+}
+
+.quote {
+position: absolute;
+width: 870px;
+height: 86px;
+left: calc(50% - 363px/2 - 180.5px);
+top: 1369px;
+
+/* Header 4 */
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 43px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* "Kian's Age" black */
+
+color: #212121;
+}
+
+.author {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: calc(50%/2 + 300px);
+    top: 1489px;
+    
+    /* Header 6.1 */
+    
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    /* "Kian's Age" black */
+    
+    color: #212121;
+    
+}
