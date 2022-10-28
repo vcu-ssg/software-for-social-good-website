@@ -160,44 +160,29 @@
     color: #212121;
 }
 
-.buttonFAQ {
-   /* Auto layout */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
-
-    position: absolute;
-    width: 210px;
-    height: 45px;
-    left: calc(50% - 210px/2 - 110px);
-    top: 780px;
-
-    /* "Kian's Age" black */
-
-    background: #212121;
-    border-radius: 18px;
-}
-
 .buttonJoin {
-    /* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px 20px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 20px;
+position: absolute;
+width: 242px;
+height: 58px;
+left: calc(50% - 242px/2);
+top: 825px;
 
-    position: absolute;
-    width: 209px;
-    height: 45px;
-    left: calc(50% - 209px/2 + 110.5px);
-    top: 780px;
 
-    /* "Kian's Age" black */
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+color: #FBFBFB;
 
-    background: #212121;
-    border-radius: 18px;
+/* "Kian's Age" black */
+
+background: #212121;
+border-radius: 30px;
 }

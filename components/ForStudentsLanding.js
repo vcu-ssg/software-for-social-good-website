@@ -1,4 +1,5 @@
 import styles from '../styles/ForStudentsLanding.module.css'
+import Link from 'next/link'
 
 const ForStudentsLanding = () => 
 {
@@ -54,11 +55,14 @@ const ForStudentsLanding = () =>
                     </div>
                 </div>
                 <h5 className={ styles.sub }>
-                    You are at the right place! Join the Software for Social Good, a Vertically Integrated Project (VIP) 
-                    at VCU college of engineering to gain real-life experience from projects that gives to our communities.
+                You are at the right place! Join the Software for Social Good, a Vertically Integrated Project (VIP) at 
+                VCU college of engineering to gain real-life experience from projects that supports the greater Richmond community 
+                as you build your own professional skills and portfolio.
                 </h5>
-                <button className={ styles.buttonFAQ }> Join the SSG team </button>
-                <button className={ styles.buttonJoin }> Student FAQ </button>
+                <Link href='/contactus'>
+                    <button className= { styles.buttonJoin }> Join the SSG team </button>
+                </Link>
+                
             </div>
         </div>
     )
