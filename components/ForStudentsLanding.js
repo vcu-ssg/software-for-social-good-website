@@ -61,7 +61,6 @@ const ForStudentsLanding = () =>
             <Link href='/contactus'>
                 <button className= { styles.buttonJoin }> Join the SSG team </button>
             </Link>
-                
         </div>
     )
 }
