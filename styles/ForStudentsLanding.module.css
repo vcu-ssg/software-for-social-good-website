@@ -19,6 +19,7 @@
     top: 306px;
     left: calc(50% - 399px/2 - 250px);
     overflow-y: scroll;
+    overflow: hidden;
 }
 
 .carousel {
