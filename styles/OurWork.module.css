@@ -14,14 +14,13 @@
     position: relative;
     width: 803px;
     height: 291px;
-    left: 535px;
-    top: 350px;
+    padding-top: 275px;
+    margin: auto;
 
 }
 
 .mainTextBox {
     position: relative;
-    
     width: 803px;
     height: 152px;
     font-family: 'Be Vietnam Pro';
@@ -49,14 +48,10 @@
     align-items: center;
     text-align: center;
     color: #212121;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    bottom: 37%;
+
+    bottom: 50px;
 }
 
 .buttonBox {
-    position: relative;
-    left: 42%;
-    top: 400px;
+    padding-left: 35%;
 }
