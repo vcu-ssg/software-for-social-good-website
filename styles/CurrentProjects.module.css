@@ -1,8 +1,8 @@
 .projectsHeader {
     position: absolute;
-    width: 600px;
+    width: 500px;
     height: 61px;
-    left: calc(50% - 363px/2 - 480.5px);
+    left: 96px;
 }
 
 .header {
@@ -11,31 +11,23 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 61px;
-
     display: flex;
     align-items: center;
-
     color: #212121;
 }
 
 .textContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 15px;
-
     position: relative;
     width: 803px;
     height: 291px;
-    left: calc(50% - 870px/2 + 50px);
-    top: 350px;
+    padding-top: 12%;
+    padding-left: 35%;
 
 }
 
 .mainTextBox {
     position: relative;
-    
+
     width: 803px;
     height: 152px;
     font-family: 'Be Vietnam Pro';
@@ -52,6 +44,7 @@
 
 .subheaderBox {
     position: relative;
+
     width: 774px;
     height: 124px;
     font-family: 'Be Vietnam Pro';
@@ -66,11 +59,42 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    bottom: 37%;
+    bottom: 30%;
+    left: 1%;
 }
 
 .buttonBox {
+    left: 48%;
     position: relative;
-    left: 42%;
-    top: 400px;
+    padding-top: 20%;
+}
+
+.proposeButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 236px;
+    height: 58px;
+
+    background: #212121;
+    border-radius: 30px;
+}
+
+.buttonText {
+    width: 123px;
+    height: 18px;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FBFBFB;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }

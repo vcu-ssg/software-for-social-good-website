@@ -50,73 +50,89 @@
     color: #212121;
 
 }
+
 @keyframes scrollThrough {
-    0%, 7.143%{
+
+    0%,
+    7.143% {
         transform: translateY(60px);
         transform: opacity(100%);
     }
 
-    7.143%, 14.286% {
+    7.143%,
+    14.286% {
         transform: translateY(0px);
         transform: opacity(75%);
     }
 
-    14.286%, 21.429% {
+    14.286%,
+    21.429% {
         transform: translateY(-60px);
         transform: opacity(50%);
     }
 
-    21.429%, 28.572% {
+    21.429%,
+    28.572% {
         transform: translateY(calc(-60px * 2));
         transform: opacity(25%);
     }
 
-    28.572%, 36.715% {
+    28.572%,
+    36.715% {
         transform: translateY(calc(-60px * 3));
         transform: opacity(0%);
     }
 
-    36.715%, 42.858% {
+    36.715%,
+    42.858% {
         transform: translateY(calc(-60px * 4));
         transform: opacity(0%);
     }
 
-    42.858%,  50.001% {
+    42.858%,
+    50.001% {
         transform: translateY(calc(-60px * 5));
         transform: opacity(0%);
     }
 
-    50.001%, 57.144% {
+    50.001%,
+    57.144% {
         transform: translateY(calc(-60px * 6));
         transform: opacity(0%);
     }
 
-    57.144%, 64.287% {
+    57.144%,
+    64.287% {
         transform: translateY(calc(-60px * 7));
         transform: opacity(0%);
     }
 
-    64.287%, 71.43% {
+    64.287%,
+    71.43% {
         transform: translateY(calc(-60px * 8));
         transform: opacity(0%);
     }
 
-    71.43%, 78.573% {
+    71.43%,
+    78.573% {
         transform: translateY(calc(-60px * 9));
         transform: opacity(0%);
     }
 
-    78.573%, 85.716% {
+    78.573%,
+    85.716% {
         transform: translateY(calc(-60px * 10));
         transform: opacity(0%);
     }
 
-    85.716%, 92.859% {
+    85.716%,
+    92.859% {
         transform: translateY(calc(-60px * 11));
         transform: opacity(0%);
     }
 
-    92.859%, 100% {
+    92.859%,
+    100% {
         transform: translateY(calc(-60px * 11));
         transform: opacity(0%);
     }
@@ -141,8 +157,8 @@
     color: #212121;
 }
 
-.sub{
-    position: absolute;
+.sub {
+    position: relative;
     width: 870px;
     height: 92px;
     left: calc(50% - 870px/2);
@@ -162,28 +178,28 @@
 }
 
 .buttonJoin {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 8px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
 
-position: absolute;
-width: 242px;
-height: 58px;
-left: calc(50% - 242px/2);
-top: 825px;
+    position: absolute;
+    width: 242px;
+    height: 58px;
+    left: calc(50% - 242px/2);
+    top: 825px;
 
 
-font-family: 'Be Vietnam Pro';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 18px;
-color: #FBFBFB;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FBFBFB;
 
-/* "Kian's Age" black */
+    /* "Kian's Age" black */
 
-background: #212121;
-border-radius: 30px;
+    background: #212121;
+    border-radius: 30px;
 }
