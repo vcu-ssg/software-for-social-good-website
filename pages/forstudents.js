@@ -12,13 +12,13 @@ export default function forstudents()
         <div>
             <Navbar/>
             <div className= {styles.topSectionContainer}>
-            <ForStudentsLanding/>
+                <ForStudentsLanding/>
             </div>
             <div className={ styles.studentVoicesContainer }>
-            <StudentVoices/>
+                <StudentVoices/>
             </div>
             <div className={ styles.currentProjectsContainer }>
-            <CurrentProjects/>
+                <CurrentProjects/>
             </div>
             <Footer/>
         </div>
