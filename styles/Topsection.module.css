@@ -1,11 +1,6 @@
-.itemContainer {
-    box-sizing: border-box;
-    position: absolute;
-    width: 1220px;
-    height: 607px;
-    left: 362px;
-    top: 200px;
-
+/* .itemContainer {
+    display: flex;
+    justify-content: center;
 }
 
 .topSecText {
@@ -20,8 +15,6 @@
 }
 
 .topSecHeader {
-    width: 410px;
-    height: 192px;
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 700;
@@ -29,10 +22,7 @@
     line-height: 64px;
     display: flex;
     align-items: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding-top: 110px;
+    color: #212121;
 }
 
 .topSecSubheader {
@@ -97,4 +87,4 @@
     position: absolute;
     left: 46.3%;
     top: 110%;
-}
+} */
