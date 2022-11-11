@@ -1,31 +1,31 @@
-.main {
-    width: 399px;
-    height: 61px;
-    left: calc(50% - 399px/2 - 235.5px);
-    top: 340px;
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.topHeader {
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainTitle {
+    margin-left: 15vw;
+    width: 80vh;
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 5vh;
+    /* background-color: #FBFBFB; */
     color: #212121;
-    padding-top: 15%;
 }
 
-.container {
-    display: flex;
-    width: 100%;
-    height: 800px;
-    background-color: #d43a3a;
-    padding-top: 3%;
-    justify-content: center;
-}
-
+/* Top Carousel Stuff*/
 .frame {
-    width: 1000px;
-    height: 180px;
-    gap: 20px;
-    top: 306px;
-    left: calc(50% - 399px/2 - 250px);
+    top: 0%;
+    height: 17vh;
     overflow-y: scroll;
     overflow: hidden;
 }
@@ -33,7 +33,7 @@
 .carousel {
     position: relative;
     text-align: left;
-    font-size: 48px;
+    font-size: 5vh;
     line-height: 61px;
     width: 1000px;
     height: 214px;
@@ -41,8 +41,7 @@
 
 .carousel .change_outer {
     position: absolute;
-    top: 0;
-    left: 46%;
+    /*left: 46%;*/
     text-align: left;
     height: 61px;
 }
@@ -166,18 +165,19 @@
 }
 
 .sub {
-    position: relative;
-    width: 870px;
-    height: 92px;
-    left: calc(50% - 870px/2);
-    top: 625px;
-
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    height: 12vh;
+    margin-left: 25%;
+    margin-top: 5%;
+    justify-content: center;
     /* Header 6 */
 
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 2.5vh;
     line-height: 25px;
     text-align: center;
 
@@ -192,11 +192,10 @@
     align-items: center;
     padding: 8px 20px;
 
-    position: absolute;
     width: 242px;
     height: 58px;
-    left: calc(50% - 242px/2);
-    top: 825px;
+    margin-left: 43%;
+    margin-top: 5%;
 
 
     font-family: 'Be Vietnam Pro';
