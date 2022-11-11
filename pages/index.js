@@ -11,24 +11,23 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 
-export default function Home()
-{
-  return(
-    <div className= {styles.container}>
-      <Navbar/>
-      <div className={ styles.topSectionContainer }>
+export default function Home() {
+  return (
+    <div className={styles.container}>
+      <Navbar />
+      <div className={styles.topSectionContainer}>
         <div>
-          <h1 className={ styles.homePageTitle }>Software For<br/>Social<br/>Good</h1>
-          <h2 className={ styles.homePageSubTitle }> We connect VCU students with outer<br/>communities through projects that brings<br/>social impact.</h2>
-          <LearnMoreButton/>
+          <h1 className={styles.homePageTitle}>Software For<br />Social<br />Good</h1>
+          <h2 className={styles.homePageSubTitle}> We connect VCU students with outer<br />communities through projects that brings<br />social impact.</h2>
+          <LearnMoreButton />
         </div>
         <div>
           <Image src="/topSecImg.svg" width="719" height="597" placeholder="empty" />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-    
+
   )
 }
 
