@@ -1,4 +1,4 @@
-import styles from '../styles/Topsection.module.css'
+import styles from '../styles/ButtonStyle.module.css'
 import Link from 'next/link'
 
 const LearnMoreButton = () => 

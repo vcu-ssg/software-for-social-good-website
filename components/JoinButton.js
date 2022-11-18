@@ -1,4 +1,4 @@
-import styles from '../styles/Pillars.module.css'
+import styles from '../styles/JoinButton.module.css'
 import Link from 'next/link'
 
 const JoinButton = () => 

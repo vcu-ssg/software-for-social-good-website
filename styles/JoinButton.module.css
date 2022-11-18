@@ -1,0 +1,30 @@
+.joinButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    width: 242px;
+    height: 58px;
+    bottom: 120px;
+    background: #212121;
+    border-radius: 30px;
+}
+
+.buttonText {
+    width: 93px;
+    height: 18px;
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FBFBFB;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
