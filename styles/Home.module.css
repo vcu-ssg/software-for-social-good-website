@@ -43,6 +43,12 @@
   color: #212121;
 }
 
+.pillarMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .pillarTitle {
   width: 345px;
@@ -61,8 +67,7 @@
 .pillarSubTitle {
   width: fit-content;
   height: 60px;
-  padding-top: 200px;
-  padding-left: 400px;
+  padding-top: 10rem;
   font-family: 'Be Vietnam Pro';
   font-style: normal;
   font-weight: 500;
@@ -70,14 +75,13 @@
   line-height: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #212121;
 }
 
 .pillarContent {
   display: flex;
   flex-direction: row;
-  padding-left: 0px;
-  justify-content: center;
   padding-top: 75px;
 }
 

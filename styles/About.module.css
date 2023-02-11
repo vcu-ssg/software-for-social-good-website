@@ -29,6 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 7rem;
 }
 
 .imageLeft {
@@ -42,6 +43,8 @@
 }
 
 .blackContainer {
+    display: flex;
+    flex-direction: column;
     background-color: #212121;
     padding-bottom: 6rem;
 }
@@ -87,7 +90,8 @@
     border-bottom: 2px solid #fbfbfb;
     align-content: center;
     align-items: center;
-    width: 40rem;
+    width: 32rem;
+    white-space: nowrap;
 }
 
 .teamSectionSkillsContainerDesc {
@@ -99,7 +103,6 @@
 }
 
 .teamSectionSkillsText {
-    font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -108,7 +111,6 @@
 }
 
 .teamSectionSkillsSubText {
-    font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -133,15 +135,17 @@
     flex-wrap: wrap;
 }
 
+.buttonDiv {
+    margin-right: 1rem;
+}
+
 .buttonContainerActive {
     border: 2px solid #212121;
     border-radius: 40px;
     width: fit-content;
     height: fit-content;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-color: #fbfbfb;
 }
 
@@ -150,33 +154,33 @@
     border-radius: 40px;
     width: fit-content;
     height: fit-content;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-color: #212121;
 }
 
 .buttonTextInactive {
-    font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     color: #fbfbfb; 
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 .buttonTextActive {
-    font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     color: #212121; 
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 .operationContainer {
     display: block;
     flex-direction: row;
-    padding-left: 10%;
+    padding-left: 10rem;
     height: auto;
 }
 
@@ -185,19 +189,22 @@
 }
 
 .operationTitle {
-    font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 21px;
     color: #fbfbfb;
+    width: 15rem; /* Using REM instead of % makes the div box the same width regardless of the text */
+    white-space: pre-wrap; /* This causes \n to occur in the string in the list of operations */
 }
 
 .operationDesc {
     font-family: 'Be Vietnam Pro';
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 18px;
+    width: auto;
     color: #CCCCCC;
+    white-space: pre-wrap; /* This causes \n to occur in the string in the list of operations */
 }
 
 .lineDivider {
