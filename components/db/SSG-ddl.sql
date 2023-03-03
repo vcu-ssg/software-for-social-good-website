@@ -11,19 +11,18 @@ drop table if exists peopleskills;
 drop table if exists people;
 create table people(
     people_id int auto_increment,
-    people_eid varchar(255) not null,
-    people_firstname varchar(255) not null,
-    people_lastname varchar(255) not null,
-    people_email varchar(255) not null,
-    people_linkedin_url varchar(255),
-    people_headshot_url varchar(255),
-    -- discord_handle varchar(255),
-    people_brief_bio varchar(255),
-    people_joined_ssg datetime default current_timestamp,
+    eid varchar(255) not null,
+    firstname varchar(255) not null,
+    lastname varchar(255) not null,
+    email varchar(255) not null,
+    linkedin_url varchar(255),
+    headshot_url varchar(255),
+    brief_bio varchar(255),
+    joined_ssg datetime default current_timestamp,
     primary key (people_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1001;
 
-insert into people(people_eid, people_firstname, people_lastname, people_email, people_linkedin_url, people_headshot_url, people_brief_bio, people_joined_ssg) values
+insert into people(eid, firstname, lastname, email, linkedin_url, headshot_url, brief_bio, joined_ssg) values
     ('jdleonard', 'John','Leonard', 'jdleonard@vcu.edu', 'linkedin_url', 'pic-Patrick.png', 'brief_bio'), -- 1
     ('wbenton', 'William', 'Benton', 'wbenton@vcu.edu', 'linkedin_url', 'pic-Patrick.png', 'brief_bio'), -- 2
     ('trandh4', 'Daniel', 'Tran','trandh4@vcu.edu', 'https://www.linkedin.com/in/tranhdaniel/', 'DanielPic.png', 'brief_bio'), -- 3
@@ -45,9 +44,9 @@ insert into people(people_eid, people_firstname, people_lastname, people_email, 
 drop table if exists roles;
 create table roles (
   roles_id int auto_increment,
-  roles_role varchar(255) not null,
-  roles_description varchar(255) not null,
-  roles_sortorder int not null default 0,
+  role varchar(255) not null,
+  description varchar(255) not null,
+  sortorder int not null default 0,
   primary key (roles_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=2001;
 
@@ -85,11 +84,11 @@ insert into skills (skills_skill, skills_description) values
 drop table if exists peopleroles;
 create table peopleroles(
     peopleroles_id int auto_increment,
-    peopleroles_people_id int not null,
-    peopleroles_roles_id int not null,
+    people_id int not null,
+    roles_id int not null,
     primary key (peopleroles_id),
-    foreign key (peopleroles_people_id) references people(people_id),
-    foreign key (peopleroles_roles_id) references roles(roles_id)
+    foreign key (people_id) references people(people_id),
+    foreign key (roles_id) references roles(roles_id)
 )
 
 insert into peopleroles (peopleroles_people_id, peopleroles_roles_id) values
