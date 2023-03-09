@@ -2,7 +2,7 @@
 .navbar {
     display: flex;
     align-items: center;
-    background: #212121;
+    background: #FFFFFF;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -14,37 +14,29 @@
 .navbarNavigation {
     justify-content: space-between;
     align-items: flex-start;
-    margin-right: 20vw;
-}
-
-.navbarNavigationItemsInactive {
-    margin: 1.5vw; /* 1.5vw */
-    color: #fbfbfb;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    font-family: 'Be Vietnam Pro';
-}
-
-.navbarTitle {
-    margin-left: 20vw; /* 3vw */
-    color: #fbfbfb;
-    font-family: 'Be Vietnam Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 61px;
+    margin-right: 4rem;
 }
 
 .navbarNavigationItemsActive {
     margin: 1.5vw; /* 1.5vw */
-    color: #fbfbfb;
+    color: #3E3E3E;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Be Vietnam Pro';
     padding-bottom: 4px;
-    border-bottom: 2px solid #fbfbfb;
+    border-bottom: 2px solid #3E3E3E;
+}
+
+.navbarNavigationItemsInactive {
+    margin: 1.5vw; /* 1.5vw */
+    color: #3E3E3E;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.navbarTitle {
+    margin-left: 5em; /* 3vw */
 }
