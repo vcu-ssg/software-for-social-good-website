@@ -54,7 +54,9 @@ const Navbar = ({children, href}) => {
     (
         <div>
             <nav className={styles.navbar}>
-                <a className={ styles.navbarTitle } href="/">SSG</a>
+                <a className={ styles.navbarTitle } href="/">
+                  <img src="/SsgLogo.svg" width="120" height="50"/>
+                </a>
                 {/* This is the div that contains all the navbar items.
                     Check if the router path is the index, about, ourwork, or etc.
                     and if they are then choose the active style.
