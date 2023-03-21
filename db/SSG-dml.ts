@@ -4,14 +4,23 @@ import executeQuery from './SSG-db';
 // Use: https://app.quicktype.io/ to calculate interface
 
   
+export async function getPeople () {
+  try {
+    const people = await executeQuery( {query:'select * from people'});
+  return (JSON.parse(JSON.stringify(people)));
+  } catch (error) {
+    return { error }
+  }
+}
+
 export async function getPeopleAndRoles () {
-  const people = await executeQuery( {query:"select * from peopleandroles_vw"} );
-  return ( JSON.parse(JSON.stringify(people))  );
+  const peopleRoles = await executeQuery( {query:"select * from peopleandroles_vw"} );
+  return ( JSON.parse(JSON.stringify(peopleRoles))  );
 }
 
 export async function getPeopleAndSkills () {
-    const people = await executeQuery( {query:"select * from peopleandskills_vw"} );
-    return ( JSON.parse(JSON.stringify(people))  );
+    const peopleSkills = await executeQuery( {query:"select * from peopleandskills_vw"} );
+    return ( JSON.parse(JSON.stringify(peopleSkills))  );
   }
 
 //JSON.parse(JSON.stringify(people)) 

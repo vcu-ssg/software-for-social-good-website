@@ -22,15 +22,17 @@ create table people(
     primary key (people_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1001;
 
-insert into people(eid, firstname, lastname, email, linkedin_url, headshot_url, brief_bio, joined_ssg) values
-    ('jdleonard', 'John','Leonard', 'jdleonard@vcu.edu', 'linkedin_url', 'pic-Patrick.png', 'brief_bio'), -- 1
-    ('wbenton', 'William', 'Benton', 'wbenton@vcu.edu', 'linkedin_url', 'pic-Patrick.png', 'brief_bio'), -- 2
-    ('trandh4', 'Daniel', 'Tran','trandh4@vcu.edu', 'https://www.linkedin.com/in/tranhdaniel/', 'DanielPic.png', 'brief_bio'), -- 3
-    ('lykt2', 'Kevin', 'Ly', 'lykt2@vcu.edu', 'linkedin_url', 'KevinPic.png', 'brief_bio'), -- 4
-    ('shinsy3', 'Lizzy', 'Shin', 'shinsy3@vcu.edu', 'linkedin_url', 'lizzyPic.png', 'brief_bio'), -- 5
-    ('thorntonkj', 'Kian', 'Thornton', 'thorntonkj@vcu.edu', 'linkedin_url', 'kianPic.png', 'brief_bio'), -- 6
-    ('parki2', 'Inho','Park', 'parki2@vcu.edu', 'linkedin_url', 'inhoPic.png', 'brief_bio'), -- 7
-    ('dasariss', 'Sneha', 'Dasari', 'dasariss@vcu.edu', 'linkedin_url', 'blank.png', 'brief_bio') -- 8
+
+
+insert into people(people_id, eid, firstname, lastname, email, linkedin_url, headshot_url, brief_bio, joined_ssg) values
+    (1, 'jdleonard', 'John','Leonard', 'jdleonard@vcu.edu', 'linkedin_url', 'pic-Patrick.png', 'brief_bio', 19000101), -- 1
+    (2, 'wbenton', 'William', 'Benton', 'wbenton@vcu.edu', 'linkedin_url', 'pic-Patrick.png', 'brief_bio', 19000101), -- 2
+    (3, 'trandh4', 'Daniel', 'Tran','trandh4@vcu.edu', 'https://www.linkedin.com/in/tranhdaniel/', 'DanielPic.png', 'brief_bio', 19000101), -- 3
+    (4, 'lykt2', 'Kevin', 'Ly', 'lykt2@vcu.edu', 'linkedin_url', 'KevinPic.png', 'brief_bio', 19000101), -- 4
+    (5, 'shinsy3', 'Lizzy', 'Shin', 'shinsy3@vcu.edu', 'linkedin_url', 'lizzyPic.png', 'brief_bio', 19000101), -- 5
+    (6, 'thorntonkj', 'Kian', 'Thornton', 'thorntonkj@vcu.edu', 'linkedin_url', 'kianPic.png', 'brief_bio', 19000101), -- 6
+    (7, 'parki2', 'Inho','Park', 'parki2@vcu.edu', 'linkedin_url', 'inhoPic.png', 'brief_bio', 19000101), -- 7
+    (8, 'dasariss', 'Sneha', 'Dasari', 'dasariss@vcu.edu', 'linkedin_url', 'blank.png', 'brief_bio', 19000101) -- 8
     ;
 
 -- Note: remind developers (kevin?) to be consistent with png naming
