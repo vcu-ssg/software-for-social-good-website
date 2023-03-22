@@ -1,5 +1,6 @@
 .mainContainer {
     display: block;
+    padding-top: 7rem;
 }
 
 .mainTitle {
@@ -10,8 +11,8 @@
     line-height: 100.5%;
     text-align: left;
     color: black;
-    padding-top: 10rem;
     padding-left: 13rem;
+    padding-bottom: 2rem;
 }
 
 .subTitle {
@@ -19,7 +20,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.4em;
     text-align: left;
     color: black;
     padding-left: 13rem;
@@ -27,19 +28,13 @@
 
 .imageSection {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-end;
     padding-bottom: 7rem;
 }
 
-.imageLeft {
-    margin-right: 10%;
-    margin-left: 0;
-}
-
-.imageRight {
-    margin-left: 10%;
-    margin-right: 0;
+.topSection {
+    display: inline-block;
+    width: 100%;
 }
 
 .blackContainer {
