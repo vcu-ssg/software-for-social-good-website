@@ -11,7 +11,6 @@
     line-height: 100.5%;
     text-align: left;
     color: black;
-    padding-top: 10rem;
     padding-left: 13rem;
     padding-bottom: 2rem;
 }
@@ -21,7 +20,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.4em;
     text-align: left;
     color: black;
     padding-left: 13rem;

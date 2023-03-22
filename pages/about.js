@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Card, CardBody, Grid, Text, Image } from "@chakra-ui/react";
+import { Card, CardBody, Grid, Text, Image, GridItem } from "@chakra-ui/react";
 
 import styles from "../styles/About.module.css"
 import CardMembers from "../components/CardMembers";
@@ -205,7 +205,12 @@ export default function about()
                     <h2 className={ styles.subTitle }>Our team is critical yet creative. We solve problems by<br/>blending backend development, 
                     design, and user<br/>experience research into a dynamic project management<br/> process.</h2>
                 </div>
-                <Image src="/ourteampic2.png" alt="ourteampic2" boxSize="xl" placeholder="empty" />
+                <GridItem>
+                    <div style={{ float: "right", marginBottom: "10rem" }}>
+                        <Image src="/ourteampic2.png" alt="ourteampic2" boxSize="2xl" placeholder="empty" />
+                    </div>          
+                </GridItem>
+                
             </Grid>
             {/* The middle, dark section of the Our Team Page */}
             {/* The Three Buttons Develop, Design, and User Research */}
@@ -361,11 +366,6 @@ export default function about()
                         )
                     })}
             </div>
-            <Card>
-                <CardBody>
-                    <Text fontSize='2xl'>Hello World</Text>
-                </CardBody>
-            </Card>
             {/* Start of Footer */}
             <Footer/>
         </div>
