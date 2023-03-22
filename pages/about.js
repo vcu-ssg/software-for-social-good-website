@@ -366,6 +366,11 @@ export default function about()
                         )
                     })}
             </div>
+            <Card>
+                <CardBody>
+                    <Text fontSize='2xl'>Hello World</Text>
+                </CardBody>
+            </Card>
             {/* Start of Footer */}
             <Footer/>
         </div>
