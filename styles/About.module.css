@@ -1,5 +1,6 @@
 .mainContainer {
     display: block;
+    padding-top: 7rem;
 }
 
 .mainTitle {
@@ -12,6 +13,7 @@
     color: black;
     padding-top: 10rem;
     padding-left: 13rem;
+    padding-bottom: 2rem;
 }
 
 .subTitle {
@@ -27,19 +29,13 @@
 
 .imageSection {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-end;
     padding-bottom: 7rem;
 }
 
-.imageLeft {
-    margin-right: 10%;
-    margin-left: 0;
-}
-
-.imageRight {
-    margin-left: 10%;
-    margin-right: 0;
+.topSection {
+    display: inline-block;
+    width: 100%;
 }
 
 .blackContainer {
