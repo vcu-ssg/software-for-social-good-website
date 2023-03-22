@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Image from "next/image";
+import { Card, CardBody, Grid, Text, Image } from "@chakra-ui/react";
 
-import Navbar from "../components/Navbar";
 import styles from "../styles/About.module.css"
 import CardMembers from "../components/CardMembers";
 import Footer from "../components/Footer";
@@ -200,21 +199,14 @@ export default function about()
 
     return(
         <div className={ styles.mainContainer }>
-            <Navbar/>
-            <h1 className={ styles.mainTitle }>Cross-functional <br/>&amp; Collaborative</h1>
-            <h2 className={ styles.subTitle }>Our team is critical yet creative. We solve problems by blending backend development,<br/> 
-            design, and user experience research into a dynamic project management process.</h2>
-            <div className={ styles.imageSection }>
-                <div className={ styles.imageLeft }>
-                    <Image src="/ourteampic1.png" alt="ourteampic1" width="528" height="537" placeholder="empty" />
+            <Grid templateColumns='repeat(2, 1fr)'>
+                <div>
+                    <h1 className={ styles.mainTitle }>Cross-functional <br/>&amp; Collaborative</h1>
+                    <h2 className={ styles.subTitle }>Our team is critical yet creative. We solve problems by<br/>blending backend development, 
+                    design, and user<br/>experience research into a dynamic project management<br/> process.</h2>
                 </div>
-                <div className={ styles.imageMiddle }>
-                    <Image src="/ourteampic2.png" alt="ourteampic2" width="661" height="440" placeholder="empty" />
-                </div>
-                <div className={ styles.imageRight }>
-                    <Image src="/ourteampic3.png" alt="ourteampic3" width="550" height="708" placeholder="empty" />
-                </div>
-            </div>
+                <Image src="/ourteampic2.png" alt="ourteampic2" boxSize="xl" placeholder="empty" />
+            </Grid>
             {/* The middle, dark section of the Our Team Page */}
             {/* The Three Buttons Develop, Design, and User Research */}
             <div className={ styles.blackContainer }>
@@ -369,6 +361,11 @@ export default function about()
                         )
                     })}
             </div>
+            <Card>
+                <CardBody>
+                    <Text fontSize='2xl'>Hello World</Text>
+                </CardBody>
+            </Card>
             {/* Start of Footer */}
             <Footer/>
         </div>
