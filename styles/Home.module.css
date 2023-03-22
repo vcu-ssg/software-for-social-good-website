@@ -1,5 +1,8 @@
 .container {
-  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+
 }
 
 .topSectionContainer {
@@ -205,4 +208,52 @@
 .proposeButton {
   padding-left: 825px;
   padding-top: 70px;
+}
+
+/* NEW HOMEPAGE STYLES */
+.homeSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBox1 {
+  width: 650px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+}
+
+.homeBox1Subtitle {
+  padding-top: 10px;
+}
+
+.homeBox1Button {
+  padding-top: 100px;
+}
+
+.homeBox2 {
+  width: 867px;
+  height: 100vh;
+  background: #D9D9D9;
+}
+
+/* FONTS */
+.header1 {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 107px;
+}
+.body2 {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 31px;
 }

@@ -9,7 +9,6 @@ import styles from '../styles/Home.module.css'
 import LearnMoreButton from '../components/LearnMoreButton'
 import Link from "next/link";
 import { useRouter } from "next/router";
-import JoinButton from '../components/JoinButton'
 import ProposeButton from '../components/ProposeButton'
 
 
@@ -18,6 +17,26 @@ export default function Home()
   return(
     <div className={ styles.container }>
       <Navbar/>
+      <div className={ styles.homeSection}>
+        <div className={ styles.homeBox1}>
+          <text className={styles.header1}>Software For<br />Social<br />Good</text>
+          <text className={`${styles.body2} ${styles.homeBox1Subtitle}`}>We connect VCU students with outer communities through projects that brings social impact.</text>
+          <div className={styles.homeBox1Button}>
+
+          </div>
+        </div>
+        <div className={ styles.homeBox2}>
+          
+        </div>
+        
+      </div>
+      <div className={ styles.section}>
+        
+      </div>
+
+
+
+      {/* <Navbar/>
       <div className={ styles.topSectionContainer }>
         <div>
           <h1 className={styles.homePageTitle}>Software For<br />Social<br />Good</h1>
@@ -78,7 +97,7 @@ export default function Home()
           <ProposeButton/>
         </div>
       </div>
-      <Footer/>
+      <Footer/> */}
     </div>
 
   )
