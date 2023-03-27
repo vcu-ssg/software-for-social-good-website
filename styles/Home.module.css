@@ -1,7 +1,9 @@
 .container {
-  width: 100vw;
-  height: 100vh;
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
 
 }
 
@@ -211,21 +213,21 @@
 }
 
 /* NEW HOMEPAGE STYLES */
-.homeSection {
+.homeSection1 {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .homeBox1 {
   width: 650px;
-  height: 500px;
+  height: 550px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 1px solid #ccc;
 }
 
 .homeBox1Subtitle {
@@ -233,14 +235,94 @@
 }
 
 .homeBox1Button {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .homeBox2 {
   width: 867px;
   height: 100vh;
-  background: #D9D9D9;
+  padding-left: 100px;
 }
+
+.homeBox2Pic {
+  padding-top: 150px;
+}
+
+.homeDownButton1 {
+  position: absolute;
+  top: 29%;
+  left: 48.75%;
+  
+}
+
+/* HOMEMID */
+.homeSection2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+.homeBox3 {
+  width: 835px;
+  height: 62px;
+  position: relative;
+  bottom: 23%;
+  right: 22%;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeHeader2 {
+  top: 40px;
+  padding-bottom: 30px;
+}
+
+.homeSub2 {
+  top: 40px;
+}
+
+.homePillars {
+  display: flex;
+  flex-direction: row;
+  height: 87px;
+  width: 1500px;
+  justify-content: space-around;
+}
+
+.homePillarBox {
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+}
+
+.homePillarsButton {
+  position: relative;
+  top: 27%;
+  right: 39%;
+}
+
+.homeDownButton2 {
+  position: relative;
+  top: 30%;
+}
+
+/* HOMEBOTTOM */
+.homeHeader3 {
+  width: 800px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.homeSub3 {
+  width: 800px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 
 /* FONTS */
 .header1 {
@@ -250,10 +332,38 @@
   font-size: 96px;
   line-height: 107px;
 }
+.header2{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 75.9px;
+}
+.header3 {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60.72px;
+}
+.subtitle1 {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 43.01px;
+}
 .body2 {
   font-family: 'Be Vietnam Pro';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 31px;
+}
+.body4 {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28.8px;
 }
