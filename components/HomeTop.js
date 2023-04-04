@@ -31,7 +31,7 @@ export default function HomeTop()
           </div>
         </div>
         <div className={ styles.homeDownButton1 }>
-            <Image src="/DownButton.svg" width="64" height="64" placeholder="empty" />
+            <a href="#Top"><Image src="/DownButton.svg" width="64" height="64" placeholder="empty" /></a>
         </div>
         <div className={ styles.homeBox2}>
           <div className={styles.homeBox2Pic}>

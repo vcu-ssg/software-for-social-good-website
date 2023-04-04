@@ -46,9 +46,9 @@ insert into people(people_id, eid, firstname, lastname, email, linkedin_url, hea
 drop table if exists roles;
 create table roles (
   roles_id int auto_increment,
-  role varchar(255) not null,
-  description varchar(255) not null,
-  sortorder int not null default 0,
+  roles_role varchar(255) not null,
+  roles_description varchar(255) not null,
+  roles_sortorder int not null default 0,
   primary key (roles_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=2001;
 

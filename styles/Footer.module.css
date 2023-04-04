@@ -82,3 +82,12 @@
     margin-bottom: 0.5rem;
     color: #fbfbfb;
 }
+
+/* FONTS (REPEATED FROM HOME.MODULE.CSS)*/
+.subtitle1 {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 43.01px;
+  }

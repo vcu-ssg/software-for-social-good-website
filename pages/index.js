@@ -13,19 +13,21 @@ import LearnMoreButton from '../components/LearnMoreButton'
 import Link from "next/link";
 import { useRouter } from "next/router"
 import { Button } from '@chakra-ui/react'
+import { useEffect, useRef } from 'react';
 
 
 
 export default function Home()
 {
   const router = useRouter();
+
   return(
     <div>
       <Navbar/>
-      <HomeTop/>
-      <HomeMid/>
-      <HomeBottom/>
-        
+      <HomeTop id='Top'/>
+      <HomeMid id='Mid'/>
+      <HomeBottom id='Bot'/>
+      <Footer/>
       </div>
       
   )

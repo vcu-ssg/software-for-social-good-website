@@ -8,10 +8,11 @@ const Footer = () =>
             <div className={ styles.innerContainer }>
                 <div className={ styles.ssgGraphicContainer }>
                     <div className={ styles.ssgBrandContainer }>
-                        <img src="/SsgLogo.svg" width="120" height="50" className={ styles.ssgLogo }/>
-                        <h4 className={ styles.ssgName }>Software for<br/>Social<br/>Good</h4>
+                        <text className={`${styles.ssgName} ${styles.subtitle1}`}>Have a design problem?<br/>We can help solve it.</text>
+                        {/* <img src="/SsgLogo.svg" width="120" height="50" className={ styles.ssgLogo }/>
+                        <h4 className={ styles.ssgName }>Software for<br/>Social<br/>Good</h4> */}
                     </div>
-                    <img src="/VCUCollegeOfEngr.png" width="221" height="61" className={ styles.vcuContainer }/>
+                    {/* <img src="/VCUCollegeOfEngr.png" width="221" height="61" className={ styles.vcuContainer }/> */}
                 </div>
                 <div className={ styles.infoContainer }>
                     <div className={ styles.infoItemContainer }>
@@ -40,6 +41,7 @@ const Footer = () =>
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }
