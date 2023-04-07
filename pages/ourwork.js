@@ -9,7 +9,6 @@ export default function ourwork()
 {
     return(
         <div>
-            <Navbar/>
             <HomeBottom/>
             {/* <div className= { styles.container }>
                 <div className= { styles.textContainer }>
@@ -22,7 +21,7 @@ export default function ourwork()
                     </div>
                 </div>
             </div> */}
-            <Footer/>
+            
         </div>
     )
 }
