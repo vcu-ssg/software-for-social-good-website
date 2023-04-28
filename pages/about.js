@@ -210,7 +210,6 @@ export default function about()
                         <Image src="/ourteampic2.png" alt="ourteampic2" boxSize="2xl" placeholder="empty" />
                     </div>          
                 </GridItem>
-                
             </Grid>
             {/* The middle, dark section of the Our Team Page */}
             {/* The Three Buttons Develop, Design, and User Research */}
@@ -366,13 +365,6 @@ export default function about()
                         )
                     })}
             </div>
-            <Card>
-                <CardBody>
-                    <Text fontSize='2xl'>Hello World</Text>
-                </CardBody>
-            </Card>
-            {/* Start of Footer */}
-            <Footer/>
         </div>
     )
 }

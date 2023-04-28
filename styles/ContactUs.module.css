@@ -1,31 +1,19 @@
-.contactContainer {
+.container {
     display: flex;
+    height: 50vh;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-
+.contactUsContainer {
+    margin-right: 6rem;
 }
 
-.contactLeft {
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+.visitUsContainer {
+    margin-left: 4rem;
 }
 
-.contactRight {
-    width: 50vw;
-    border-left: 1px solid #DEDFE4;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+.headingText {
+    font-style: normal;
+    font-weight: 600;
+    color: black;
 }
