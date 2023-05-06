@@ -3,7 +3,6 @@ import { Card, CardBody, Grid, Text, Image, GridItem } from "@chakra-ui/react";
 
 import styles from "../styles/About.module.css"
 import CardMembers from "../components/CardMembers";
-import Footer from "../components/Footer";
 import KevinPic from "../public/KevinPic.png"
 import LenicePic from "../public/LenicePic.png"
 import DanielPic from "../public/DanielPic.png"
@@ -207,7 +206,7 @@ export default function about()
                 </div>
                 <GridItem>
                     <div style={{ float: "right", marginBottom: "10rem" }}>
-                        <Image src="/ourteampic2.png" alt="ourteampic2" boxSize="2xl" placeholder="empty" />
+                        <Image src="/ourteampic2.png" alt="About Us Picture" boxSize="2xl" placeholder="empty" />
                     </div>          
                 </GridItem>
             </Grid>

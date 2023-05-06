@@ -1,16 +1,19 @@
+import { Box } from '@chakra-ui/react';
 import styles from '../styles/Footer.module.css'
+import Image from 'next/image';
+
 
 const Footer = () => 
-{
-    
+{ 
     return(
         <div className={ styles.container }>
             <div className={ styles.innerContainer }>
                 <div className={ styles.ssgGraphicContainer }>
                     <div className={ styles.ssgBrandContainer }>
                         <text className={`${styles.ssgName} ${styles.subtitle1}`}>Have a design problem?<br/>We can help solve it.</text>
-                        {/* <img src="/SsgLogo.svg" width="120" height="50" className={ styles.ssgLogo }/>
-                        <h4 className={ styles.ssgName }>Software for<br/>Social<br/>Good</h4> */}
+                        <div className={styles.imageWrapper}>
+                            <Image src="/CollegeOfEngr.png" alt="VCU College of Engineering Logo" height="300px" width="600px" className={styles.imageStyle}/>
+                        </div>
                     </div>
                     {/* <img src="/VCUCollegeOfEngr.png" width="221" height="61" className={ styles.vcuContainer }/> */}
                 </div>

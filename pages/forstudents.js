@@ -10,7 +10,6 @@ export default function forstudents()
 {
     return(
         <div>
-            <Navbar/>
             <div className= {styles.topSectionContainer}>
                 <ForStudentsLanding/>
             </div>
@@ -20,7 +19,6 @@ export default function forstudents()
             <div className={ styles.currentProjectsContainer }>
                 <CurrentProjects/>
             </div>
-            <Footer/>
         </div>
     )
 }
