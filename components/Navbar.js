@@ -47,7 +47,11 @@ const Navbar = ({children, href}) => {
     return screenSize.width <= 786 ? (
         <div>
             <nav className={styles.navbar}>
-                <h1 className={ styles.navbarTitle }>Software for Social Good</h1>
+                <Link href="/">
+                  <a className={ styles.navbarTitle }>
+                    <img src="/SsgLogo.svg" width="120" height="50"/>
+                  </a>
+                </Link>
                 <HamburgerMenu/>
             </nav>
         </div>
