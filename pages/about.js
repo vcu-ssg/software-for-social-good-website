@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Card, CardBody, Grid, Text, Image, GridItem } from "@chakra-ui/react";
-
+import { Card, CardBody, Grid, Text, GridItem } from "@chakra-ui/react";
 import styles from "../styles/About.module.css"
 import CardMembers from "../components/CardMembers";
 import KevinPic from "../public/KevinPic.png"
@@ -11,6 +10,7 @@ import swetaPic from "../public/swetaPic.png"
 import inhoPic from "../public/inhoPic.png"
 import lizzyPic from "../public/lizzyPic.png"
 import kianPic from "../public/kianPic.png"
+import Image from "next/image"
 
 const developTeam = [
     {
@@ -191,7 +191,7 @@ const teamCulture = [
     }
 ]
 
-export default function about()
+export default function About()
 {
     const [team, setTeam] = useState("Develop");
 
@@ -206,7 +206,7 @@ export default function about()
                 </div>
                 <GridItem>
                     <div style={{ float: "right", marginBottom: "10rem" }}>
-                        <Image src="/ourteampic2.png" alt="About Us Picture" boxSize="2xl" placeholder="empty" />
+                        <Image src="/ourteampic2.png" alt="About Us Picture" width="1050" height="632" placeholder="empty" />
                     </div>          
                 </GridItem>
             </Grid>
@@ -273,7 +273,7 @@ export default function about()
                         ?
                             operationsDevList.map((operation) => {
                                 return(
-                                    <div className={ styles.operationOuterBox }>
+                                    <div className={ styles.operationOuterBox } key={operation.id}>
                                         <div style={{marginRight: 10 + "rem", left: 0, width: 25 + "%"}}>
                                             <p className={ styles.operationTitle }>{ operation.operationTitle }</p>
                                         </div>
@@ -287,7 +287,7 @@ export default function about()
                         ?
                             operationsDesList.map((operation) => {
                                 return(
-                                    <div className={ styles.operationOuterBox }>
+                                    <div className={ styles.operationOuterBox } key={operation.id}>
                                         <div style={{marginRight: 10 + "rem", left: 0, width: 25 + "%"}}>
                                             <p className={ styles.operationTitle }>{ operation.operationTitle }</p>
                                         </div>
@@ -300,7 +300,7 @@ export default function about()
                         :
                             operationsUserResList.map((operation) => {
                                 return(
-                                    <div className={ styles.operationOuterBox }>
+                                    <div className={ styles.operationOuterBox } key={operation.id}>
                                         <div style={{marginRight: 10 + "rem", left: 0, width: 25 + "%"}}>
                                             <p className={ styles.operationTitle }>{ operation.operationTitle }</p>
                                         </div>
@@ -323,7 +323,7 @@ export default function about()
                                 return(
                                     <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } 
                                     name={ member.name } major={ member.major } graduationyear={ member.graduationyear }
-                                    portfolioURL={ member.portfolioURL }/>
+                                    portfolioURL={ member.portfolioURL } key={member.id}/>
                                 )
                             })
                         : team == "Design"
@@ -332,7 +332,7 @@ export default function about()
                                 return(
                                     <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath }
                                     name={ member.name } major={ member.major } graduationyear={ member.graduationyear }
-                                    portfolioURL={ member.portfolioURL }/>
+                                    portfolioURL={ member.portfolioURL } key={member.id}/>
                                 )
                             })
                         :
@@ -340,7 +340,7 @@ export default function about()
                                 return(
                                     <CardMembers linkedInURL={ member.linkedInURL } imagePath={ member.imagePath } 
                                     name={ member.name } major={ member.major } graduationyear={ member.graduationyear }
-                                    portfolioURL={ member.portfolioURL }/>
+                                    portfolioURL={ member.portfolioURL } key={member.id}/>
                                 )
                             })
                         }
@@ -356,7 +356,7 @@ export default function about()
             <div className= { styles.teamCultureSection }>
                     {teamCulture.map((card, index) => {
                         return(
-                            <div className={ styles.teamCultureCard }>
+                            <div className={ styles.teamCultureCard } key={card.id}>
                                 <p className={ styles.teamCultureNumber }>0{index + 1} </p>
                                 <p className={ styles.teamCultureHeader }> { card.cardTitle } </p>
                                 <p className={ styles.teamCultureDesc }> { card.cardDesc } </p>
