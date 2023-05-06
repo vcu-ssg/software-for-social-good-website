@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
-import styles from '../styles/ContactUs.module.css'
-import { Divider, Text } from "@chakra-ui/react";
+import styles from '../styles/ContactUs.module.css';
+import { Divider, Text, Image } from "@chakra-ui/react";
 
 export default function contactus()
 {
@@ -10,12 +10,20 @@ export default function contactus()
                 <Text className={styles.headingText} fontSize="4xl" pb="1">Contact Us</Text>
                 <Text className={styles.headingText}>Whether you are a business, non-profit, student,</Text>
                 <Text className={styles.headingText}>or a teacher, reach out to us for any questions!</Text>
-                <div>
-                    <Text className={styles.headingText} fontSize="2xl">William Benton</Text>
-                    <Text className={styles.headingText}>wbenton@vcu.edu | Faculty</Text>
-                    <Divider border="1px solid"/>
-                    <Text className={styles.headingText} fontSize="2xl">John Leonard</Text>
-                    <Text className={styles.headingText}>jdleonard@vcu.edu | Faculty</Text>
+                <div className={styles.facultyCard}>
+                    <Image src='WilliamPic.jpg' boxSize="100px" />
+                    <div>
+                        <Text className={styles.headingText} fontSize="2xl">William Benton</Text>
+                        <Text className={styles.headingText}>wbenton@vcu.edu | Faculty</Text>
+                    </div>
+                </div>
+                <Divider border="1px solid"/>
+                <div className={styles.facultyCard}>
+                    <Image src='LeonardPic.jpg' boxSize="100px"/>
+                    <div>
+                        <Text className={styles.headingText} fontSize="2xl">John Leonard</Text>
+                        <Text className={styles.headingText}>jdleonard@vcu.edu | Faculty</Text>
+                    </div>
                 </div>
             </div>
             <Divider orientation="vertical" border="1px solid" height="25rem"/>

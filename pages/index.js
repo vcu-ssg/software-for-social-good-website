@@ -23,12 +23,10 @@ export default function Home()
 
   return(
     <div>
-      <Navbar/>
       <HomeTop id='Top'/>
       <HomeMid id='Mid'/>
       <HomeBottom id='Bot'/>
-      <Footer/>
-      </div>
+    </div>
       
   )
 }

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import HamburgerMenu from './HamburgerMenu';
 import logo from '../public/ssglogo.svg';
+import Link from 'next/link';
 
 // https://stackoverflow.com/questions/63406435/how-to-detect-window-size-in-next-js-ssr-using-react-hook
 // Hook
@@ -46,7 +47,11 @@ const Navbar = ({children, href}) => {
     return screenSize.width <= 786 ? (
         <div>
             <nav className={styles.navbar}>
-                <h1 className={ styles.navbarTitle }>Software for Social Good</h1>
+                <Link href="/">
+                  <a className={ styles.navbarTitle }>
+                    <img src="/SsgLogo.svg" width="120" height="50"/>
+                  </a>
+                </Link>
                 <HamburgerMenu/>
             </nav>
         </div>
@@ -54,24 +59,33 @@ const Navbar = ({children, href}) => {
     (
         <div>
             <nav className={styles.navbar}>
-                <a className={ styles.navbarTitle } href="/">
-                  <img src="/SsgLogo.svg" width="120" height="50"/>
-                </a>
+                <Link href="/">
+                  <a className={ styles.navbarTitle }>
+                    <img src="/SsgLogo.svg" width="120" height="50"/>
+                  </a>
+                </Link>
+                
                 {/* This is the div that contains all the navbar items.
                     Check if the router path is the index, about, ourwork, or etc.
                     and if they are then choose the active style.
                     If not then, simply choose the Inactive style */}
                 <div className={ styles.navbarNavigation }>
-                    <a className={ router.asPath == "/" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive }
-                      href="/"></a>
-                    <a className={ router.asPath == "/about" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
-                      href="/about">Our Team</a>
-                    <a className={ router.asPath == "/ourwork" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
-                      href="/ourwork">Our Work</a>
-                    <a className={ router.asPath == "/forstudents" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
-                      href="/forstudents">For Students</a>
-                    <a className={ router.asPath == "/contactus" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive } 
-                      href="/contactus">Contact Us</a>
+                  <Link href="/about">
+                    <a className={ router.asPath == "/about" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive }>
+                      Our Team</a>
+                  </Link>
+                  <Link href="/ourwork">
+                    <a className={ router.asPath == "/ourwork" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive }>
+                      Our Work</a>
+                  </Link>
+                  <Link href="/forstudents">
+                    <a className={ router.asPath == "/forstudents" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive }>
+                      For Students</a>
+                  </Link>
+                  <Link href="/contactus">
+                    <a className={ router.asPath == "/contactus" ? styles.navbarNavigationItemsActive : styles.navbarNavigationItemsInactive }>
+                      Contact Us</a>
+                  </Link>
                 </div>
             </nav>
         </div>

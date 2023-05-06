@@ -16,6 +16,7 @@
 
 .ssgBrandContainer {
     display: flex;
+    flex-direction: column;
 }
 
 .ssgGraphicContainer {
@@ -61,6 +62,14 @@
     margin-bottom: 0rem;
     padding-top: 0rem;
     height: min-content;
+}
+
+.imageWrapper {
+    width: 300px;
+}
+
+.imageStyle {
+    object-fit: contain;
 }
 
 .infoHeaderText {
